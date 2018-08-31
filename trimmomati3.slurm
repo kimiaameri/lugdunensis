@@ -12,7 +12,6 @@ cd trimmomatic3
 mkdir trimlog
 
 module load trimmomatic/0.36
-#module load java/1.8
 
 trimmomatic PE -threads 4 -phred33 -trimlog $WORK/lugdunensis-output/trimmomatic3/trimlog/3_B5_S5_L001.trimlog $HOME/lugdunensis-data/3_B5/3_B5_S5_L001_R1_001.fastq.gz $HOME/lugdunensis-data/3_B5/3_B5_S5_L001_R2_001.fastq.gz $WORK/lugdunensis-output/trimmomatic3/3_B5_S5_L001_R1_001.paired.fq $WORK/lugdunensis-output/trimmomatic3/3_B5_S5_L001_R1_001.unpaired.fq $WORK/lugdunensis-output/trimmomatic3/3_B5_S5_L001_R2_001.paired.fq $WORK/lugdunensis-output/trimmomatic3/3_B5_S5_L001_R2_001.unpaired.fq SLIDINGWINDOW:4:15 MAXINFO:50:0.5 LEADING:3 TRAILING:3 MINLEN:75;
 trimmomatic PE -threads 4 -phred33 -trimlog $WORK/lugdunensis-output/trimmomatic3/trimlog/3_B5_S5_L002.trimlog $HOME/lugdunensis-data/3_B5/3_B5_S5_L002_R1_001.fastq.gz $HOME/lugdunensis-data/3_B5/3_B5_S5_L002_R2_001.fastq.gz $WORK/lugdunensis-output/trimmomatic3/3_B5_S5_L002_R1_001.paired.fq $WORK/lugdunensis-output/trimmomatic3/3_B5_S5_L001_R1_002.unpaired.fq $WORK/lugdunensis-output/trimmomatic3/3_B5_S5_L002_R2_001.paired.fq $WORK/lugdunensis-output/trimmomatic3/3_B5_S5_L002_R2_001.unpaired.fq SLIDINGWINDOW:4:15 MAXINFO:50:0.5 LEADING:3 TRAILING:3 MINLEN:75;
