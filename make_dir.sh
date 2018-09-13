@@ -4,3 +4,6 @@ mkdir lugdunensis-output
 cd lugdunensis-output
 mkdir trimmomatic
 cd trimmomatic
+cd $WORK/
+mkdir lugdunensis_softwares
+
