@@ -1,9 +1,9 @@
 #!/bin/sh
 #SBATCH --time=15:00:00   # Run time in hh:mm:ss
 #SBATCH --mem-per-cpu=8192     # Maximum memory required per CPU (in megabytes)
-#SBATCH --job-name=trimmomatic-8_A7
-#SBATCH --error=trimmomatic-8_A7.%J.err
-#SBATCH --output=trimmomatic-8_A7.%J.out
+#SBATCH --job-name=trimmomatic-9_A2
+#SBATCH --error=trimmomatic-9_A2.%J.err
+#SBATCH --output=trimmomatic-9_A2.%J.out
 cd $WORK/lugdunensis-output/trimmomatic
 
 mkdir trim-9_A2
