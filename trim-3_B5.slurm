@@ -4,11 +4,8 @@
 #SBATCH --job-name=trimmomatic
 #SBATCH --error=trimmomatic.%J.err
 #SBATCH --output=trimmomatic.%J.out
-cd $WORK/
-mkdir lugdunensis-output
-cd lugdunensis-output
-mkdir trimmomatic
-cd trimmomatic
+cd $WORK/lugdunensis-output/trimmomatic
+
 mkdir trim-3_B5
 cd trim-3_B5
 mkdir trimlog
