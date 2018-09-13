@@ -1,5 +1,5 @@
 #!/bin/sh
-#SBATCH --time=15:00:00          # Run time in hh:mm:ss
+#SBATCH --time=10:00:00          # Run time in hh:mm:ss
 #SBATCH --mem-per-cpu=8192       # Maximum memory required per CPU (in megabytes)
 #SBATCH --job-name=bwa-3_B5
 #SBATCH --error=bwa-3_B5.%J.err
