@@ -1,5 +1,7 @@
-##sh make_dir.sh
-##sh trimmomatic.sh
+###follow these steps:
 
-##sh bwa.sh
-##sbatch bwa.slurm
+#####sh make_dir.sh
+#####sh trimmomatic.sh
+
+#####sh bwa.sh
+#####sbatch bwa.slurm
