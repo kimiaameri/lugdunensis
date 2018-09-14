@@ -5,5 +5,5 @@ rm bwa-0.7.17.tar.bz2
 cd bwa-0.7.17
 make
 cd $HOME/lugdunensis_reference_genome/
-$WORK/lugdunensis-softwares/bwa-0.7.17/bwa Staphylococcus_lugdunensis_N920143.fa
+$WORK/lugdunensis-softwares/bwa-0.7.17/bwa index Staphylococcus_lugdunensis_N920143.fa
 
