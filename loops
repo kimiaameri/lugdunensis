@@ -1,0 +1,1 @@
+[kimia@login.tusker ~]$ for x in `ls  /work/biocore/kimia/lugdunensis-output/trimmomatic/trim-10_F1/*.paired.fq`; do echo $x; y=`echo $x|sed 's/fq/txt/'`; echo $y;done
