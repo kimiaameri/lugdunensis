@@ -9,4 +9,4 @@
 ##### sbatch bam.slurm
 ##### sbatch picard.slurm
 ##### sh freebayes.sh
-##### sh bcf-vcfScript.sh
+##### sh bcf-vcf.slurm
