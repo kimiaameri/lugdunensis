@@ -5,6 +5,7 @@ cd lugdunensis-output
 mkdir trimmomatic
 mkdir samfiles
 mkdir picard
+mkdir freebayes
 cd picard
 mkdir picardlog
 cd $WORK/
