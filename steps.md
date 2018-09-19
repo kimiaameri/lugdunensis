@@ -7,3 +7,4 @@
 ##### sbatch bwa.slurm
 
 ##### sbatch bam.slurm
+##### sbatch picard.slurm
