@@ -8,3 +8,4 @@
 
 ##### sbatch bam.slurm
 ##### sbatch picard.slurm
+##### sh freebayes.sh
