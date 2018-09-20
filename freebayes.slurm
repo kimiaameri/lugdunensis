@@ -4,6 +4,8 @@
 #SBATCH --job-name=freebayes
 #SBATCH --error=freebayes.%J.err
 #SBATCH --output=freebayes.%J.out
+module load samtools/1.9
+samtools faidx Staphylococcus_lugdunensis_N920143.fa -o Staphylococcus_lugdunensis_N920143.fa.fai
 
 $WORK/lugdunensis-softwares/freebayes/bin/freebayes -f $HOME/lugdunensis_reference_genome/Staphylococcus_lugdunensis_N920143.fa $WORK/lugdunensis-output/picard/3_B5_S5_L001.picard.bam >$WORK/lugdunensis-output/freebayes/3_B5_S5_L001.bam;
 $WORK/lugdunensis-softwares/freebayes/bin/freebayes -f $HOME/lugdunensis_reference_genome/Staphylococcus_lugdunensis_N920143.fa $WORK/lugdunensis-output/picard/3_B5_S5_L002.picard.bam >$WORK/lugdunensis-output/freebayes/3_B5_S5_L002.bam;
