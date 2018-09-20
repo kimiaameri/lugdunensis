@@ -5,4 +5,4 @@ make
 cd $WORK/lugdunensis-softwares/freebayes/vcflib
 make
 cd $WORK/lugdunensis
-sbatch freebayes.slurm
+sbatch freebayes.slurm;
