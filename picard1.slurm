@@ -8,6 +8,3 @@
 module load picard/2.9
 
 picard -Xms1024m -Xmx10g MarkDuplicates I=$WORK/lugdunensis-output/sortsam/aln_3_B5_S5_L001.sorted.bam O=$WORK/lugdunensis-output/picard/3_B5_S5_L001.picard.bam M=$WORK/lugdunensis-output/picard/picardlog/3_B5_S5_L001.picard.log;
-picard -Xms1024m -Xmx10g MarkDuplicates I=$WORK/lugdunensis-output/sortsam/aln_3_B5_S5_L002.sorted.bam O=$WORK/lugdunensis-output/picard/3_B5_S5_L002.picard.bam M=$WORK/lugdunensis-output/picard/picardlog/3_B5_S5_L002.picard.log;
-picard -Xms1024m -Xmx10g MarkDuplicates I=$WORK/lugdunensis-output/sortsam/aln_3_B5_S5_L003.sorted.bam O=$WORK/lugdunensis-output/picard/3_B5_S5_L003.picard.bam M=$WORK/lugdunensis-output/picard/picardlog/3_B5_S5_L003.picard.log;
-picard -Xms1024m -Xmx10g MarkDuplicates I=$WORK/lugdunensis-output/sortsam/aln_3_B5_S5_L004.sorted.bam O=$WORK/lugdunensis-output/picard/3_B5_S5_L004.picard.bam M=$WORK/lugdunensis-output/picard/picardlog/3_B5_S5_L004.picard.log;
