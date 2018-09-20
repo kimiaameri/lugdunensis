@@ -1,0 +1,1 @@
+sbatch picard*.slurm
