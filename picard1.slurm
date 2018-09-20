@@ -1,9 +1,9 @@
 #!/bin/sh
 ##SBATCH --time=30:00:00          # Run time in hh:mm:ss
 ##SBATCH --mem-per-cpu=16384       # Maximum memory required per CPU (in megabytes)
-#SBATCH --job-name=picards
-#SBATCH --error=picards.%J.err
-#SBATCH --output=picards.%J.out
+#SBATCH --job-name=picard1
+#SBATCH --error=picard1.%J.err
+#SBATCH --output=picard1.%J.out
 
 module load picard/2.9
 
