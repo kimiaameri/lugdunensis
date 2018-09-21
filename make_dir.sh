@@ -6,6 +6,9 @@ mkdir trimmomatic
 mkdir samfiles
 mkdir picard
 mkdir freebayes
+mkdir vcffilterq5000
+mkdir vcffilterq5000-dp250
+mkdir bcfoutput
 cd picard
 mkdir picardlog
 cd $WORK/
