@@ -1,5 +1,5 @@
 #!/bin/sh
-#SBATCH --time=25:00:00   # Run time in hh:mm:ss
+#SBATCH --time=30:00:00   # Run time in hh:mm:ss
 #SBATCH --mem-per-cpu=8192     # Maximum memory required per CPU (in megabytes)
 #SBATCH --job-name=samsortflag
 #SBATCH --error=samsortflag.%J.err
