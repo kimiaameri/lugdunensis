@@ -218,4 +218,44 @@ bcftools view -Ob $WORK/lugdunensis-output/vcffilterq5000-dp250/13_G2_S12_L004_q
 bcftools index $WORK/lugdunensis-output/bcfoutput/13_G2_S12_L004_q5000_dp250.vcf.gz;
 ########################################################################################
 
+$WORK/lugdunensis-softwares/freebayes/vcflib/bin/vcffilter -f "QUAL > 5000" $WORK/lugdunensis-output/freebayes/8_C9_S8_L001.vcf > $WORK/lugdunensis-output/vcffilterq5000/8_C9_S8_L001_q5000.vcf 
+$WORK/lugdunensis-softwares/freebayes/vcflib/bin/vcffilter -f "DP > 250" $WORK/lugdunensis-output/vcffilterq5000/8_C9_S8_L001_q5000.vcf > $WORK/lugdunensis-output/vcffilterq5000-dp250/8_C9_S8_L001_q5000_dp250.vcf;
+bcftools view -Ob $WORK/lugdunensis-output/vcffilterq5000-dp250/8_C9_S8_L001_q5000_dp250.vcf >$WORK/lugdunensis-output/bcfoutput/8_C9_S8_L001_q5000_dp250.vcf.gz;
+bcftools index $WORK/lugdunensis-output/bcfoutput/8_C9_S8_L001_q5000_dp250.vcf.gz;
+
+$WORK/lugdunensis-softwares/freebayes/vcflib/bin/vcffilter -f "QUAL > 5000" $WORK/lugdunensis-output/freebayes/8_C9_S8_L002.vcf > $WORK/lugdunensis-output/vcffilterq5000/8_C9_S8_L002_q5000.vcf 
+$WORK/lugdunensis-softwares/freebayes/vcflib/bin/vcffilter -f "DP > 250" $WORK/lugdunensis-output/vcffilterq5000/8_C9_S8_L002_q5000.vcf > $WORK/lugdunensis-output/vcffilterq5000-dp250/8_C9_S8_L002_q5000_dp250.vcf;
+bcftools view -Ob $WORK/lugdunensis-output/vcffilterq5000-dp250/8_C9_S8_L002_q5000_dp250.vcf >$WORK/lugdunensis-output/bcfoutput/8_C9_S8_L002_q5000_dp250.vcf.gz;
+bcftools index $WORK/lugdunensis-output/bcfoutput/8_C9_S8_L002_q5000_dp250.vcf.gz;
+
+$WORK/lugdunensis-softwares/freebayes/vcflib/bin/vcffilter -f "QUAL > 5000" $WORK/lugdunensis-output/freebayes/8_C9_S8_L003.vcf > $WORK/lugdunensis-output/vcffilterq5000/8_C9_S8_L003_q5000.vcf 
+$WORK/lugdunensis-softwares/freebayes/vcflib/bin/vcffilter -f "DP > 250" $WORK/lugdunensis-output/vcffilterq5000/8_C9_S8_L003_q5000.vcf > $WORK/lugdunensis-output/vcffilterq5000-dp250/8_C9_S8_L003_q5000_dp250.vcf;
+bcftools view -Ob $WORK/lugdunensis-output/vcffilterq5000-dp250/8_C9_S8_L003_q5000_dp250.vcf >$WORK/lugdunensis-output/bcfoutput/8_C9_S8_L003_q5000_dp250.vcf.gz;
+bcftools index $WORK/lugdunensis-output/bcfoutput/8_C9_S8_L003_q5000_dp250.vcf.gz;
+
+$WORK/lugdunensis-softwares/freebayes/vcflib/bin/vcffilter -f "QUAL > 5000" $WORK/lugdunensis-output/freebayes/8_C9_S8_L004.vcf > $WORK/lugdunensis-output/vcffilterq5000/8_C9_S8_L004_q5000.vcf 
+$WORK/lugdunensis-softwares/freebayes/vcflib/bin/vcffilter -f "DP > 250" $WORK/lugdunensis-output/vcffilterq5000/8_C9_S8_L004_q5000.vcf > $WORK/lugdunensis-output/vcffilterq5000-dp250/8_C9_S8_L004_q5000_dp250.vcf;
+bcftools view -Ob $WORK/lugdunensis-output/vcffilterq5000-dp250/8_C9_S8_L004_q5000_dp250.vcf >$WORK/lugdunensis-output/bcfoutput/8_C9_S8_L004_q5000_dp250.vcf.gz;
+bcftools index $WORK/lugdunensis-output/bcfoutput/8_C9_S8_L004_q5000_dp250.vcf.gz;
+########################################################################################
+
+$WORK/lugdunensis-softwares/freebayes/vcflib/bin/vcffilter -f "QUAL > 5000" $WORK/lugdunensis-output/freebayes/5_D7_S3_L001.vcf > $WORK/lugdunensis-output/vcffilterq5000/5_D7_S3_L001_q5000.vcf 
+$WORK/lugdunensis-softwares/freebayes/vcflib/bin/vcffilter -f "DP > 250" $WORK/lugdunensis-output/vcffilterq5000/5_D7_S3_L001_q5000.vcf > $WORK/lugdunensis-output/vcffilterq5000-dp250/5_D7_S3_L001_q5000_dp250.vcf;
+bcftools view -Ob $WORK/lugdunensis-output/vcffilterq5000-dp250/5_D7_S3_L001_q5000_dp250.vcf >$WORK/lugdunensis-output/bcfoutput/5_D7_S3_L001_q5000_dp250.vcf.gz;
+bcftools index $WORK/lugdunensis-output/bcfoutput/5_D7_S3_L001_q5000_dp250.vcf.gz;
+
+$WORK/lugdunensis-softwares/freebayes/vcflib/bin/vcffilter -f "QUAL > 5000" $WORK/lugdunensis-output/freebayes/5_D7_S3_L002.vcf > $WORK/lugdunensis-output/vcffilterq5000/5_D7_S3_L002_q5000.vcf 
+$WORK/lugdunensis-softwares/freebayes/vcflib/bin/vcffilter -f "DP > 250" $WORK/lugdunensis-output/vcffilterq5000/5_D7_S3_L002_q5000.vcf > $WORK/lugdunensis-output/vcffilterq5000-dp250/5_D7_S3_L002_q5000_dp250.vcf;
+bcftools view -Ob $WORK/lugdunensis-output/vcffilterq5000-dp250/5_D7_S3_L002_q5000_dp250.vcf >$WORK/lugdunensis-output/bcfoutput/5_D7_S3_L002_q5000_dp250.vcf.gz;
+bcftools index $WORK/lugdunensis-output/bcfoutput/5_D7_S3_L002_q5000_dp250.vcf.gz;
+
+$WORK/lugdunensis-softwares/freebayes/vcflib/bin/vcffilter -f "QUAL > 5000" $WORK/lugdunensis-output/freebayes/5_D7_S3_L003.vcf > $WORK/lugdunensis-output/vcffilterq5000/5_D7_S3_L003_q5000.vcf 
+$WORK/lugdunensis-softwares/freebayes/vcflib/bin/vcffilter -f "DP > 250" $WORK/lugdunensis-output/vcffilterq5000/5_D7_S3_L003_q5000.vcf > $WORK/lugdunensis-output/vcffilterq5000-dp250/5_D7_S3_L003_q5000_dp250.vcf;
+bcftools view -Ob $WORK/lugdunensis-output/vcffilterq5000-dp250/5_D7_S3_L003_q5000_dp250.vcf >$WORK/lugdunensis-output/bcfoutput/5_D7_S3_L003_q5000_dp250.vcf.gz;
+bcftools index $WORK/lugdunensis-output/bcfoutput/5_D7_S3_L003_q5000_dp250.vcf.gz;
+
+$WORK/lugdunensis-softwares/freebayes/vcflib/bin/vcffilter -f "QUAL > 5000" $WORK/lugdunensis-output/freebayes/5_D7_S3_L004.vcf > $WORK/lugdunensis-output/vcffilterq5000/5_D7_S3_L004_q5000.vcf 
+$WORK/lugdunensis-softwares/freebayes/vcflib/bin/vcffilter -f "DP > 250" $WORK/lugdunensis-output/vcffilterq5000/5_D7_S3_L004_q5000.vcf > $WORK/lugdunensis-output/vcffilterq5000-dp250/5_D7_S3_L004_q5000_dp250.vcf;
+bcftools view -Ob $WORK/lugdunensis-output/vcffilterq5000-dp250/5_D7_S3_L004_q5000_dp250.vcf >$WORK/lugdunensis-output/bcfoutput/5_D7_S3_L004_q5000_dp250.vcf.gz;
+bcftools index $WORK/lugdunensis-output/bcfoutput/5_D7_S3_L004_q5000_dp250.vcf.gz;
 
