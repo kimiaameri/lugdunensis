@@ -11,3 +11,4 @@
 ##### sh freebayes.sh
 ##### sbatch bcf-vcf.slurm
 ##### sbatch persisters.slurm
+##### sbatch snpEff.slurm
