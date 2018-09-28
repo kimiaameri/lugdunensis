@@ -184,36 +184,36 @@ samtools sort -o $WORK/lugdunensis-output/sortsam/aln_13_G2_S12_L004.sorted.bam 
 
 ########################
 ####### 8_C9
-samtools view -bt $HOME/lugdunensis_reference_genome/Staphylococcus_lugdunensis_N920143.fa $WORK/lugdunensis-output/samfiles/8_C9_S8_L001.sam -o $WORK/lugdunensis-output/bamfiles/aln_13_G2_S12_L001.bam;
+samtools view -bt $HOME/lugdunensis_reference_genome/Staphylococcus_lugdunensis_N920143.fa $WORK/lugdunensis-output/samfiles/8_C9_S8_L001.sam -o $WORK/lugdunensis-output/bamfiles/aln_8_C9_S8_L001.bam;
 samtools flagstat $WORK/lugdunensis-output/bamfiles/aln_8_C9_S8_L001.bam >$WORK/lugdunensis-output/flagsam/aln_8_C9_S8_L001.flagstat.log;
 samtools sort -o $WORK/lugdunensis-output/sortsam/aln_8_C9_S8_L001.sorted.bam -O bam $WORK/lugdunensis-output/bamfiles/aln_8_C9_S8_L001.bam;
 
-samtools view -bt $HOME/lugdunensis_reference_genome/Staphylococcus_lugdunensis_N920143.fa $WORK/lugdunensis-output/samfiles/8_C9_S8_L002.sam -o $WORK/lugdunensis-output/bamfiles/aln_13_G2_S12_L002.bam;
+samtools view -bt $HOME/lugdunensis_reference_genome/Staphylococcus_lugdunensis_N920143.fa $WORK/lugdunensis-output/samfiles/8_C9_S8_L002.sam -o $WORK/lugdunensis-output/bamfiles/aln_8_C9_S8_L002.bam;
 samtools flagstat $WORK/lugdunensis-output/bamfiles/aln_8_C9_S8_L002.bam >$WORK/lugdunensis-output/flagsam/aln_8_C9_S8_L002.flagstat.log;
 samtools sort -o $WORK/lugdunensis-output/sortsam/aln_8_C9_S8_L002.sorted.bam -O bam $WORK/lugdunensis-output/bamfiles/aln_8_C9_S8_L002.bam;
 
-samtools view -bt $HOME/lugdunensis_reference_genome/Staphylococcus_lugdunensis_N920143.fa $WORK/lugdunensis-output/samfiles/8_C9_S8_L003.sam -o $WORK/lugdunensis-output/bamfiles/aln_13_G2_S12_L003.bam;
+samtools view -bt $HOME/lugdunensis_reference_genome/Staphylococcus_lugdunensis_N920143.fa $WORK/lugdunensis-output/samfiles/8_C9_S8_L003.sam -o $WORK/lugdunensis-output/bamfiles/aln_8_C9_S8_L003.bam;
 samtools flagstat $WORK/lugdunensis-output/bamfiles/aln_8_C9_S8_L003.bam >$WORK/lugdunensis-output/flagsam/aln_8_C9_S8_L003.flagstat.log;
 samtools sort -o $WORK/lugdunensis-output/sortsam/aln_8_C9_S8_L003.sorted.bam -O bam $WORK/lugdunensis-output/bamfiles/aln_8_C9_S8_L003.bam;
 
-samtools view -bt $HOME/lugdunensis_reference_genome/Staphylococcus_lugdunensis_N920143.fa $WORK/lugdunensis-output/samfiles/8_C9_S8_L004.sam -o $WORK/lugdunensis-output/bamfiles/aln_13_G2_S12_L004.bam;
+samtools view -bt $HOME/lugdunensis_reference_genome/Staphylococcus_lugdunensis_N920143.fa $WORK/lugdunensis-output/samfiles/8_C9_S8_L004.sam -o $WORK/lugdunensis-output/bamfiles/aln_8_C9_S8_L004.bam;
 samtools flagstat $WORK/lugdunensis-output/bamfiles/aln_8_C9_S8_L004.bam >$WORK/lugdunensis-output/flagsam/aln_8_C9_S8_L004.flagstat.log;
 samtools sort -o $WORK/lugdunensis-output/sortsam/aln_8_C9_S8_L004.sorted.bam -O bam $WORK/lugdunensis-output/bamfiles/aln_8_C9_S8_L004.bam;
 
 ########################
 ####### 5_D7
-samtools view -bt $HOME/lugdunensis_reference_genome/Staphylococcus_lugdunensis_N920143.fa $WORK/lugdunensis-output/samfiles/5_D7_S3_L001.sam -o $WORK/lugdunensis-output/bamfiles/aln_13_G2_S12_L001.bam;
+samtools view -bt $HOME/lugdunensis_reference_genome/Staphylococcus_lugdunensis_N920143.fa $WORK/lugdunensis-output/samfiles/5_D7_S3_L001.sam -o $WORK/lugdunensis-output/bamfiles/aln_5_D7_S3_L001.bam;
 samtools flagstat $WORK/lugdunensis-output/bamfiles/aln_5_D7_S3_L001.bam >$WORK/lugdunensis-output/flagsam/aln_5_D7_S3_L001.flagstat.log;
 samtools sort -o $WORK/lugdunensis-output/sortsam/aln_5_D7_S3_L001.sorted.bam -O bam $WORK/lugdunensis-output/bamfiles/aln_5_D7_S3_L001.bam;
 
-samtools view -bt $HOME/lugdunensis_reference_genome/Staphylococcus_lugdunensis_N920143.fa $WORK/lugdunensis-output/samfiles/5_D7_S3_L002.sam -o $WORK/lugdunensis-output/bamfiles/aln_13_G2_S12_L002.bam;
+samtools view -bt $HOME/lugdunensis_reference_genome/Staphylococcus_lugdunensis_N920143.fa $WORK/lugdunensis-output/samfiles/5_D7_S3_L002.sam -o $WORK/lugdunensis-output/bamfiles/aln_5_D7_S3_L002.bam;
 samtools flagstat $WORK/lugdunensis-output/bamfiles/aln_5_D7_S3_L002.bam >$WORK/lugdunensis-output/flagsam/aln_5_D7_S3_L002.flagstat.log;
 samtools sort -o $WORK/lugdunensis-output/sortsam/aln_5_D7_S3_L002.sorted.bam -O bam $WORK/lugdunensis-output/bamfiles/aln_5_D7_S3_L002.bam;
 
-samtools view -bt $HOME/lugdunensis_reference_genome/Staphylococcus_lugdunensis_N920143.fa $WORK/lugdunensis-output/samfiles/5_D7_S3_L003.sam -o $WORK/lugdunensis-output/bamfiles/aln_13_G2_S12_L003.bam;
+samtools view -bt $HOME/lugdunensis_reference_genome/Staphylococcus_lugdunensis_N920143.fa $WORK/lugdunensis-output/samfiles/5_D7_S3_L003.sam -o $WORK/lugdunensis-output/bamfiles/aln_5_D7_S3_L003.bam;
 samtools flagstat $WORK/lugdunensis-output/bamfiles/aln_5_D7_S3_L003.bam >$WORK/lugdunensis-output/flagsam/aln_5_D7_S3_L003.flagstat.log;
 samtools sort -o $WORK/lugdunensis-output/sortsam/aln_5_D7_S3_L003.sorted.bam -O bam $WORK/lugdunensis-output/bamfiles/aln_5_D7_S3_L003.bam;
 
-samtools view -bt $HOME/lugdunensis_reference_genome/Staphylococcus_lugdunensis_N920143.fa $WORK/lugdunensis-output/samfiles/5_D7_S3_L004.sam -o $WORK/lugdunensis-output/bamfiles/aln_13_G2_S12_L004.bam;
+samtools view -bt $HOME/lugdunensis_reference_genome/Staphylococcus_lugdunensis_N920143.fa $WORK/lugdunensis-output/samfiles/5_D7_S3_L004.sam -o $WORK/lugdunensis-output/bamfiles/aln_5_D7_S3_L004.bam;
 samtools flagstat $WORK/lugdunensis-output/bamfiles/aln_5_D7_S3_L004.bam >$WORK/lugdunensis-output/flagsam/aln_5_D7_S3_L004.flagstat.log;
 samtools sort -o $WORK/lugdunensis-output/sortsam/aln_15_D7_S3_L004.sorted.bam -O bam $WORK/lugdunensis-output/bamfiles/aln_5_D7_S3_L004.bam;
