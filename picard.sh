@@ -8,3 +8,5 @@ sbatch picard7.slurm;
 sbatch picard8.slurm;
 sbatch picard9.slurm;
 sbatch picard10.slurm;
+sbatch picard11.slurm;
+sbatch picard12.slurm;
