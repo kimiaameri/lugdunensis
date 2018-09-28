@@ -216,4 +216,4 @@ samtools sort -o $WORK/lugdunensis-output/sortsam/aln_5_D7_S3_L003.sorted.bam -O
 
 samtools view -bt $HOME/lugdunensis_reference_genome/Staphylococcus_lugdunensis_N920143.fa $WORK/lugdunensis-output/samfiles/5_D7_S3_L004.sam -o $WORK/lugdunensis-output/bamfiles/aln_5_D7_S3_L004.bam;
 samtools flagstat $WORK/lugdunensis-output/bamfiles/aln_5_D7_S3_L004.bam >$WORK/lugdunensis-output/flagsam/aln_5_D7_S3_L004.flagstat.log;
-samtools sort -o $WORK/lugdunensis-output/sortsam/aln_15_D7_S3_L004.sorted.bam -O bam $WORK/lugdunensis-output/bamfiles/aln_5_D7_S3_L004.bam;
+samtools sort -o $WORK/lugdunensis-output/sortsam/aln_5_D7_S3_L004.sorted.bam -O bam $WORK/lugdunensis-output/bamfiles/aln_5_D7_S3_L004.bam;
