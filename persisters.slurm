@@ -10,11 +10,28 @@
 cd $WORK/lugdunensis-output/bcfoutput
 module load bcftools/1.8
 
-bcftools isec 5_C10*.vcf.gz 5_C11*.vcf.gz 5_H3*.vcf.gz 5_D7*.vcf.gz -p $WORK/lugdunensis-output/bcfoutput/low -n=16;
+mkdir low
+cp 5_C10*.vcf.gz ./low
+cp 5_C11*.vcf.gz ./low
+cp 5_H3*.vcf.gz ./low
+cp 5_D7*.vcf.gz ./low
+ 
+mkdir high
+cp 10_F1*.vcf.gz ./high
+cp 10_H5*.vcf.gz  ./high
+cp 13_G2*.vcf.gz  ./high
+cp 3_B5*.vcf.gz  ./high
+cp 5_C4*.vcf.gz  ./high
+co 8_C9*.vcf.gz ./high
+cp 8_A7*.vcf.gz ./high
+cp 9_A2*.vcf.gz ./high
 
-bcftools isec 10_F1*.vcf.gz 10_H5*.vcf.gz 13_G2*.vcf.gz 3_B5*.vcf.gz 5_C4*.vcf.gz  8_C9*.vcf.gz 8_A7*.vcf.gz 9_A2*.vcf.gz -p $WORK/lugdunensis-output/bcfoutput/high -n=32 ;
 
-bcftools isec *.vcf.gz -p $WORK/lugdunensis-output/bcfoutput/all -n=48;
+bcftools isec /low/* -p $WORK/lugdunensis-output/low -n=16;
+
+bcftools isec /high/* -p $WORK/lugdunensis-output/high -n=32 ;
+
+bcftools isec *.vcf.gz -p $WORK/lugdunensis-output/all -n=48;
 
 sed -i 's/^chr/Chromosome/' $WORK/lugdunensis-output/bcfoutput/*/*.vcf; 
 
