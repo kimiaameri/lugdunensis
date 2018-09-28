@@ -7,7 +7,7 @@
 
 ###  5_C10, 5_C11, 5_D7, 5_H3 are all low biofilm formers
 ### 10_F1  10_H5  13_G2  3_B5  5_C4  8_C9 8_A7  9_A2 are all high biofilm formers
-$WORK/lugdunensis-output/bcfoutput
+cd $WORK/lugdunensis-output/bcfoutput
 module load bcftools/1.8
 
 bcftools isec 5_C10*.vcf.gz 5_C11*.vcf.gz 5_H3*.vcf.gz 5_D7*.vcf.gz -p $WORK/lugdunensis-output/bcfoutput/low -n=16;
