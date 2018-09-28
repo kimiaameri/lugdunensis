@@ -11,6 +11,12 @@ mkdir vcffilterq5000-dp250
 mkdir bcfoutput
 cd picard
 mkdir picardlog
+cd ../ 
+mkdir snpEff
+cd snpEff
+mkdir snpEff-gene
+mkdir snpEff-summary
+
 cd $WORK/
 mkdir lugdunensis-softwares
 
