@@ -56,3 +56,13 @@ $WORK/lugdunensis-softwares/freebayes/bin/freebayes -f $HOME/lugdunensis_referen
 $WORK/lugdunensis-softwares/freebayes/bin/freebayes -f $HOME/lugdunensis_reference_genome/Staphylococcus_lugdunensis_N920143.fa $WORK/lugdunensis-output/picard/13_G2_S12_L002.picard.bam >$WORK/lugdunensis-output/freebayes/13_G2_S12_L002.vcf;
 $WORK/lugdunensis-softwares/freebayes/bin/freebayes -f $HOME/lugdunensis_reference_genome/Staphylococcus_lugdunensis_N920143.fa $WORK/lugdunensis-output/picard/13_G2_S12_L003.picard.bam >$WORK/lugdunensis-output/freebayes/13_G2_S12_L003.vcf;
 $WORK/lugdunensis-softwares/freebayes/bin/freebayes -f $HOME/lugdunensis_reference_genome/Staphylococcus_lugdunensis_N920143.fa $WORK/lugdunensis-output/picard/13_G2_S12_L004.picard.bam >$WORK/lugdunensis-output/freebayes/13_G2_S12_L004.vcf;
+
+$WORK/lugdunensis-softwares/freebayes/bin/freebayes -f $HOME/lugdunensis_reference_genome/Staphylococcus_lugdunensis_N920143.fa $WORK/lugdunensis-output/picard/8_C9_S8_L001.picard.bam >$WORK/lugdunensis-output/freebayes/8_C9_S8_L001.vcf;
+$WORK/lugdunensis-softwares/freebayes/bin/freebayes -f $HOME/lugdunensis_reference_genome/Staphylococcus_lugdunensis_N920143.fa $WORK/lugdunensis-output/picard/8_C9_S8_L002.picard.bam >$WORK/lugdunensis-output/freebayes/8_C9_S8_L002.vcf;
+$WORK/lugdunensis-softwares/freebayes/bin/freebayes -f $HOME/lugdunensis_reference_genome/Staphylococcus_lugdunensis_N920143.fa $WORK/lugdunensis-output/picard/8_C9_S8_L003.picard.bam >$WORK/lugdunensis-output/freebayes/8_C9_S8_L003.vcf;
+$WORK/lugdunensis-softwares/freebayes/bin/freebayes -f $HOME/lugdunensis_reference_genome/Staphylococcus_lugdunensis_N920143.fa $WORK/lugdunensis-output/picard/8_C9_S8_L004.picard.bam >$WORK/lugdunensis-output/freebayes/8_C9_S8_L004.vcf;
+
+$WORK/lugdunensis-softwares/freebayes/bin/freebayes -f $HOME/lugdunensis_reference_genome/Staphylococcus_lugdunensis_N920143.fa $WORK/lugdunensis-output/picard/5_D7_S3_L001.picard.bam >$WORK/lugdunensis-output/freebayes/5_D7_S3_L001.vcf;
+$WORK/lugdunensis-softwares/freebayes/bin/freebayes -f $HOME/lugdunensis_reference_genome/Staphylococcus_lugdunensis_N920143.fa $WORK/lugdunensis-output/picard/5_D7_S3_L002.picard.bam >$WORK/lugdunensis-output/freebayes/5_D7_S3_L002.vcf;
+$WORK/lugdunensis-softwares/freebayes/bin/freebayes -f $HOME/lugdunensis_reference_genome/Staphylococcus_lugdunensis_N920143.fa $WORK/lugdunensis-output/picard/5_D7_S3_L003.picard.bam >$WORK/lugdunensis-output/freebayes/5_D7_S3_L003.vcf;
+$WORK/lugdunensis-softwares/freebayes/bin/freebayes -f $HOME/lugdunensis_reference_genome/Staphylococcus_lugdunensis_N920143.fa $WORK/lugdunensis-output/picard/5_D7_S3_L004.picard.bam >$WORK/lugdunensis-output/freebayes/5_D7_S3_L004.vcf;
