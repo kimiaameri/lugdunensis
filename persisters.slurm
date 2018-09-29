@@ -27,11 +27,13 @@ cp 8_A7*.vcf.gz ./high
 cp 9_A2*.vcf.gz ./high
 
 
-bcftools isec /low/* -p $WORK/lugdunensis-output/low -n=16;
+bcftools isec $WORK/lugdunensis-output/bcfoutput/low/* -p $WORK/lugdunensis-output/low -n=16;
 
-bcftools isec /high/* -p $WORK/lugdunensis-output/high -n=32 ;
+bcftools isec $WORK/lugdunensis-output/bcfoutput/high/* -p $WORK/lugdunensis-output/high -n=32 ;
 
-bcftools isec *.vcf.gz -p $WORK/lugdunensis-output/all -n=48;
+bcftools isec $WORK/lugdunensis-output/bcfoutput/*.vcf.gz -p $WORK/lugdunensis-output/all -n=48;
 
-sed -i 's/^chr/Chromosome/' $WORK/lugdunensis-output/bcfoutput/*/*.vcf; 
+sed -i 's/^chr/Chromosome/' $WORK/lugdunensis-output/all/*.vcf; 
+sed -i 's/^chr/Chromosome/' $WORK/lugdunensis-output/high/*.vcf; 
+sed -i 's/^chr/Chromosome/' $WORK/lugdunensis-output/low/*.vcf; 
 
