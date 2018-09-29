@@ -18,7 +18,7 @@ cp 5_D7* ./low
  
 mkdir high
 cp 10_F1* ./high
-cp 10_H5*  ./high
+cp 10_H5* ./high
 cp 13_G2* ./high
 cp 3_B5* ./high
 cp 5_C4* ./high
@@ -27,11 +27,11 @@ cp 8_A7* ./high
 cp 9_A2* ./high
 
 
-bcftools isec $WORK/lugdunensis-output/bcfoutput/low/* -p $WORK/lugdunensis-output/low -n=16;
+bcftools isec $WORK/lugdunensis-output/bcfoutput/low/*.gz -p $WORK/lugdunensis-output/low -n=16;
 
-bcftools isec $WORK/lugdunensis-output/bcfoutput/high/* -p $WORK/lugdunensis-output/high -n=32 ;
+bcftools isec $WORK/lugdunensis-output/bcfoutput/high/*.gz -p $WORK/lugdunensis-output/high -n=32 ;
 
-bcftools isec $WORK/lugdunensis-output/bcfoutput/* -p $WORK/lugdunensis-output/all -n=48;
+bcftools isec $WORK/lugdunensis-output/bcfoutput/*.gz -p $WORK/lugdunensis-output/all -n=48;
 
 sed -i 's/^chr/Chromosome/' $WORK/lugdunensis-output/all/*.vcf; 
 sed -i 's/^chr/Chromosome/' $WORK/lugdunensis-output/high/*.vcf; 
