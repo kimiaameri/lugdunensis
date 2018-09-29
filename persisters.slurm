@@ -11,20 +11,20 @@ cd $WORK/lugdunensis-output/bcfoutput
 module load bcftools/1.8
 
 mkdir low
-cp 5_C10*.vcf.gz ./low
-cp 5_C11*.vcf.gz ./low
-cp 5_H3*.vcf.gz ./low
-cp 5_D7*.vcf.gz ./low
+cp 5_C10* ./low
+cp 5_C11* ./low
+cp 5_H3* ./low
+cp 5_D7* ./low
  
 mkdir high
-cp 10_F1*.vcf.gz ./high
-cp 10_H5*.vcf.gz  ./high
-cp 13_G2*.vcf.gz  ./high
-cp 3_B5*.vcf.gz  ./high
-cp 5_C4*.vcf.gz  ./high
-co 8_C9*.vcf.gz ./high
-cp 8_A7*.vcf.gz ./high
-cp 9_A2*.vcf.gz ./high
+cp 10_F1* ./high
+cp 10_H5*  ./high
+cp 13_G2* ./high
+cp 3_B5* ./high
+cp 5_C4* ./high
+co 8_C9* ./high
+cp 8_A7* ./high
+cp 9_A2* ./high
 
 
 bcftools isec $WORK/lugdunensis-output/bcfoutput/low/* -p $WORK/lugdunensis-output/low -n=16;
