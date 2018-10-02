@@ -8,8 +8,8 @@ module load java/1.8
 cd $WORK/lugdunensis-output/
 mkdir snpEff2
 cd snpEff2
-mkdir snpEff-summary-2
-mkdir snpEff-gene-2
+mkdir snpEff-summary2
+mkdir snpEff-gene2
 cd $WORK/lugdunensis
 
 java -Xmx4g -jar $WORK/lugdunensis-softwares/snpEff/snpEff.jar -v Staphylococcus_lugdunensis_n920143 $WORK/lugdunensis-output/all2/0000.vcf > $WORK/lugdunensis-output/snpEff2/snpEff-All-0.ann.vcf;
