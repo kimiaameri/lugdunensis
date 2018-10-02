@@ -8,7 +8,7 @@
 module load bcftools/1.8
 module load java/1.8
 cd $WORK/lugdunensis-output/
-mkdir temp3
+mkdir nofilter
 cp $WORK/lugdunensis-output/freebayes/*.vcf $WORK/lugdunensis-output/nofilter/
 
 
