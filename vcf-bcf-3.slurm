@@ -37,7 +37,7 @@ bcftools view -Ob $WORK/lugdunensis-output/vcffilterq1000-dp100/5_C4_S6_L001_q10
 bcftools index $WORK/lugdunensis-output/bcfoutput3/5_C4_S6_L001_q1000_dp100.vcf.gz;
 
 $WORK/lugdunensis-softwares/freebayes/vcflib/bin/vcffilter -f "QUAL > 1000" $WORK/lugdunensis-output/freebayes/5_C4_S6_L002.vcf > $WORK/lugdunensis-output/vcffilterq1000/5_C4_S6_L002_q1000.vcf 
-$WORK/lugdunensis-softwares/freebayes/vcflib/bin/vcffilter -f "DP > 100 "$WORK/lugdunensis-output/vcffilterq1000/5_C4_S6_L002_q1000.vcf > $WORK/lugdunensis-output/vcffilterq1000-dp100/5_C4_S6_L002_q1000_dp100.vcf;
+$WORK/lugdunensis-softwares/freebayes/vcflib/bin/vcffilter -f "DP > 100" $WORK/lugdunensis-output/vcffilterq1000/5_C4_S6_L002_q1000.vcf > $WORK/lugdunensis-output/vcffilterq1000-dp100/5_C4_S6_L002_q1000_dp100.vcf;
 bcftools view -Ob $WORK/lugdunensis-output/vcffilterq1000-dp100/5_C4_S6_L002_q1000_dp100.vcf >$WORK/lugdunensis-output/bcfoutput3/5_C4_S6_L002_q1000_dp100.vcf.gz;
 bcftools index $WORK/lugdunensis-output/bcfoutput3/5_C4_S6_L002_q1000_dp100.vcf.gz;
 
@@ -121,7 +121,7 @@ bcftools view -Ob $WORK/lugdunensis-output/vcffilterq1000-dp100/8_A7_S7_L001_q10
 bcftools index $WORK/lugdunensis-output/bcfoutput3/8_A7_S7_L001_q1000_dp100.vcf.gz;
 
 $WORK/lugdunensis-softwares/freebayes/vcflib/bin/vcffilter -f "QUAL > 1000" $WORK/lugdunensis-output/freebayes/8_A7_S7_L002.vcf > $WORK/lugdunensis-output/vcffilterq1000/8_A7_S7_L002_q1000.vcf 
-$WORK/lugdunensis-softwares/freebayes/vcflib/bin/vcffilter -f "DP > 100"$WORK/lugdunensis-output/vcffilterq1000/8_A7_S7_L002_q1000.vcf > $WORK/lugdunensis-output/vcffilterq1000-dp100/8_A7_S7_L002_q1000_dp100.vcf;
+$WORK/lugdunensis-softwares/freebayes/vcflib/bin/vcffilter -f "DP > 100" $WORK/lugdunensis-output/vcffilterq1000/8_A7_S7_L002_q1000.vcf > $WORK/lugdunensis-output/vcffilterq1000-dp100/8_A7_S7_L002_q1000_dp100.vcf;
 bcftools view -Ob $WORK/lugdunensis-output/vcffilterq1000-dp100/8_A7_S7_L002_q1000_dp100.vcf >$WORK/lugdunensis-output/bcfoutput3/8_A7_S7_L002_q1000_dp100.vcf.gz;
 bcftools index $WORK/lugdunensis-output/bcfoutput3/8_A7_S7_L002_q1000_dp100.vcf.gz;
 
