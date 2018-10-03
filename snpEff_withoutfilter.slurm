@@ -229,7 +229,7 @@ cp 5_C11* ./low-f
 cp 5_H3* ./low-f
 cp 5_D7* ./low-f
  
-mkdir high
+mkdir high-f
 cp 10_F1* ./high-f
 cp 10_H5* ./high-f
 cp 13_G2* ./high-f
