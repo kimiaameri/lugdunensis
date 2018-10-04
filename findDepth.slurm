@@ -4,7 +4,7 @@
 #SBATCH --job-name=depth
 #SBATCH --error=depth.%J.err
 #SBATCH --output=depth.%J.out
-Cd $WORK/ lugdunensis-output/
+Cd $WORK/lugdunensis-output/
 Mkdir depth
 module load samtools/1.9
 ####### 3_B5
