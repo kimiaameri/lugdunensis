@@ -386,12 +386,12 @@ bcftools index $WORK/lugdunensis-output/nofilter/bcfoutput-nofilter/5_D7_S3_L002
 bcftools view -Ob $WORK/lugdunensis-output/nofilter/intersects/5_D7_S3_L003.vcf >$WORK/lugdunensis-output/nofilter/bcfoutput-nofilter/5_D7_S3_L003.vcf.gz;
 bcftools index $WORK/lugdunensis-output/nofilter/bcfoutput-nofilter/5_D7_S3_L003.vcf.gz;
 
-bcftools view -Ob $WORK/lugdunensis-output/nofilter/intersects/5_D7_S3_L004.vcf >$WORK/lugdunensis-output/nofilter/bcfoutput-nofilter/5_D7_S3_L004_q1000_dp100_dp100.vcf.gz;
+bcftools view -Ob $WORK/lugdunensis-output/nofilter/intersects/5_D7_S3_L004.vcf >$WORK/lugdunensis-output/nofilter/bcfoutput-nofilter/5_D7_S3_L004.vcf.gz;
 bcftools index $WORK/lugdunensis-output/nofilter/bcfoutput-nofilter/5_D7_S3_L004.vcf.gz;
 
 
 ###########################################
-cd $WORK/lugdunensis-output/nofilter/intersects
+cd $WORK/lugdunensis-output/nofilter/bcfoutput-nofilter/
 module load bcftools/1.8
 
 mkdir low-f
@@ -411,11 +411,11 @@ cp 8_A7* ./high-f
 cp 9_A2* ./high-f
 
 
-bcftools isec $WORK/lugdunensis-output/nofilter/intersects/low-f/*.gz -p $WORK/lugdunensis-output/nofilter/low -n=16;
+bcftools isec $WORK/lugdunensis-output/nofilter/bcfoutput-nofilter/low-f/*.gz -p $WORK/lugdunensis-output/nofilter/low -n=16;
 
-bcftools isec $WORK/lugdunensis-output/nofilter/intersects/high-f/*.gz -p $WORK/lugdunensis-output/nofilter/high -n=32 ;
+bcftools isec $WORK/lugdunensis-output/nofilter/bcfoutput-nofilter/high-f/*.gz -p $WORK/lugdunensis-output/nofilter/high -n=32 ;
 
-bcftools isec $WORK/lugdunensis-output/nofilter/intersects/*.gz -p $WORK/lugdunensis-output/nofilter/all -n=48;
+bcftools isec $WORK/lugdunensis-output/nofilter/bcfoutput-nofilter/*.gz -p $WORK/lugdunensis-output/nofilter/all -n=48;
 
 sed -i 's/^chr/Chromosome/' $WORK/lugdunensis-output/nofilter/low/*.vcf; 
 sed -i 's/^chr/Chromosome/' $WORK/lugdunensis-output/nofilter/high/*.vcf; 
