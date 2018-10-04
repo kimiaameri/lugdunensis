@@ -4,8 +4,8 @@
 #SBATCH --job-name=depth
 #SBATCH --error=depth.%J.err
 #SBATCH --output=depth.%J.out
-Cd $WORK/lugdunensis-output/
-Mkdir depth
+cd $WORK/lugdunensis-output/
+mkdir depth
 module load samtools/1.9
 ####### 3_B5
 samtools depth $WORK/lugdunensis-output/sortsam/aln_3_B5_S5_L001.sorted.bam >$WORK/lugdunensis-output/depth/aln_3_B5_S5_L001.depth;
