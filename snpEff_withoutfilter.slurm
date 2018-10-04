@@ -226,173 +226,172 @@ cp $WORK/lugdunensis-output/freebayes/*.vcf $WORK/lugdunensis-output/nofilter/in
 
 cd $WORK/lugdunensis-output/nofilter/
 mkdir bcfoutput-nofilter
-module load bcftools/1.8
-module load java/1.8
-bcftools view -Ob $WORK/lugdunensis-output/nofilter/intersects/3_B5_S5_L001.vcf >$WORK/lugdunensis-output/bcfoutput-nofilter/3_B5_S5_L001.vcf.gz;
-bcftools index $WORK/lugdunensis-output/bcfoutput-nofilter/3_B5_S5_L001.vcf.gz;
 
-bcftools view -Ob $WORK/lugdunensis-output/nofilter/intersects/3_B5_S5_L002.vcf >$WORK/lugdunensis-output/bcfoutput-nofilter/3_B5_S5_L002.vcf.gz;
-bcftools index $WORK/lugdunensis-output/bcfoutput-nofilter/3_B5_S5_L002.vcf.gz;
+bcftools view -Ob $WORK/lugdunensis-output/nofilter/intersects/3_B5_S5_L001.vcf >$WORK/lugdunensis-output/nofilter/bcfoutput-nofilter/3_B5_S5_L001.vcf.gz;
+bcftools index $WORK/lugdunensis-output/nofilter/bcfoutput-nofilter/3_B5_S5_L001.vcf.gz;
+
+bcftools view -Ob $WORK/lugdunensis-output/nofilter/intersects/3_B5_S5_L002.vcf >$WORK/lugdunensis-output/nofilter/bcfoutput-nofilter/3_B5_S5_L002.vcf.gz;
+bcftools index $WORK/lugdunensis-output/nofilter/bcfoutput-nofilter/3_B5_S5_L002.vcf.gz;
 
 
-bcftools view -Ob $WORK/lugdunensis-output/nofilter/intersects/3_B5_S5_L003.vcf >$WORK/lugdunensis-output/bcfoutput-nofilter/3_B5_S5_L003.vcf.gz;
-bcftools index $WORK/lugdunensis-output/bcfoutput-nofilter/3_B5_S5_L003.vcf.gz;
+bcftools view -Ob $WORK/lugdunensis-output/nofilter/intersects/3_B5_S5_L003.vcf >$WORK/lugdunensis-output/nofilter/bcfoutput-nofilter/3_B5_S5_L003.vcf.gz;
+bcftools index $WORK/lugdunensis-output/nofilter/bcfoutput-nofilter/3_B5_S5_L003.vcf.gz;
 
-bcftools view -Ob $WORK/lugdunensis-output/nofilter/intersects/3_B5_S5_L004.vcf >$WORK/lugdunensis-output/bcfoutput-nofilter/3_B5_S5_L004.vcf.gz;
-bcftools index $WORK/lugdunensis-output/bcfoutput-nofilter/3_B5_S5_L004.vcf.gz;
+bcftools view -Ob $WORK/lugdunensis-output/nofilter/intersects/3_B5_S5_L004.vcf >$WORK/lugdunensis-output/nofilter/bcfoutput-nofilter/3_B5_S5_L004.vcf.gz;
+bcftools index $WORK/lugdunensis-output/nofilter/bcfoutput-nofilter/3_B5_S5_L004.vcf.gz;
 ########################################################################################
 
-bcftools view -Ob $WORK/lugdunensis-output/nofilter/intersects/5_C4_S6_L001.vcf >$WORK/lugdunensis-output/bcfoutput-nofilter/5_C4_S6_L001.vcf.gz;
-bcftools index $WORK/lugdunensis-output/bcfoutput-nofilter/5_C4_S6_L001.vcf.gz;
+bcftools view -Ob $WORK/lugdunensis-output/nofilter/intersects/5_C4_S6_L001.vcf >$WORK/lugdunensis-output/nofilter/bcfoutput-nofilter/5_C4_S6_L001.vcf.gz;
+bcftools index $WORK/lugdunensis-output/nofilter/bcfoutput-nofilter/5_C4_S6_L001.vcf.gz;
 
-bcftools view -Ob $WORK/lugdunensis-output/nofilter/intersects/5_C4_S6_L002.vcf >$WORK/lugdunensis-output/bcfoutput-nofilter/5_C4_S6_L002.vcf.gz;
-bcftools index $WORK/lugdunensis-output/bcfoutput-nofilter/5_C4_S6_L002.vcf.gz;
+bcftools view -Ob $WORK/lugdunensis-output/nofilter/intersects/5_C4_S6_L002.vcf >$WORK/lugdunensis-output/nofilter/bcfoutput-nofilter/5_C4_S6_L002.vcf.gz;
+bcftools index $WORK/lugdunensis-output/nofilter/bcfoutput-nofilter/5_C4_S6_L002.vcf.gz;
 
 
-bcftools view -Ob $WORK/lugdunensis-output/nofilter/intersects/5_C4_S6_L003.vcf >$WORK/lugdunensis-output/bcfoutput-nofilter/5_C4_S6_L003.vcf.gz;
-bcftools index $WORK/lugdunensis-output/bcfoutput-nofilter/5_C4_S6_L003.vcf.gz;
+bcftools view -Ob $WORK/lugdunensis-output/nofilter/intersects/5_C4_S6_L003.vcf >$WORK/lugdunensis-output/nofilter/bcfoutput-nofilter/5_C4_S6_L003.vcf.gz;
+bcftools index $WORK/lugdunensis-output/nofilter/bcfoutput-nofilter/5_C4_S6_L003.vcf.gz;
 
-bcftools view -Ob $WORK/lugdunensis-output/nofilter/intersects/5_C4_S6_L004.vcf >$WORK/lugdunensis-output/bcfoutput-nofilter/5_C4_S6_L004.vcf.gz;
-bcftools index $WORK/lugdunensis-output/bcfoutput-nofilter/5_C4_S6_L004.vcf.gz;
+bcftools view -Ob $WORK/lugdunensis-output/nofilter/intersects/5_C4_S6_L004.vcf >$WORK/lugdunensis-output/nofilter/bcfoutput-nofilter/5_C4_S6_L004.vcf.gz;
+bcftools index $WORK/lugdunensis-output/nofilter/bcfoutput-nofilter/5_C4_S6_L004.vcf.gz;
 ########################################################################################
 
-bcftools view -Ob $WORK/lugdunensis-output/nofilter/intersects/5_C10_S1_L001.vcf >$WORK/lugdunensis-output/bcfoutput-nofilter/5_C10_S1_L001.vcf.gz;
-bcftools index $WORK/lugdunensis-output/bcfoutput-nofilter/5_C10_S1_L001.vcf.gz;
+bcftools view -Ob $WORK/lugdunensis-output/nofilter/intersects/5_C10_S1_L001.vcf >$WORK/lugdunensis-output/nofilter/bcfoutput-nofilter/5_C10_S1_L001.vcf.gz;
+bcftools index $WORK/lugdunensis-output/nofilter/bcfoutput-nofilter/5_C10_S1_L001.vcf.gz;
 
-bcftools view -Ob $WORK/lugdunensis-output/nofilter/intersects/5_C10_S1_L002.vcf >$WORK/lugdunensis-output/bcfoutput-nofilter/5_C10_S1_L002.vcf.gz;
-bcftools index $WORK/lugdunensis-output/bcfoutput-nofilter/5_C10_S1_L002.vcf.gz;
+bcftools view -Ob $WORK/lugdunensis-output/nofilter/intersects/5_C10_S1_L002.vcf >$WORK/lugdunensis-output/nofilter/bcfoutput-nofilter/5_C10_S1_L002.vcf.gz;
+bcftools index $WORK/lugdunensis-output/nofilter/bcfoutput-nofilter/5_C10_S1_L002.vcf.gz;
 
-bcftools view -Ob $WORK/lugdunensis-output/nofilter/intersects/5_C10_S1_L003.vcf >$WORK/lugdunensis-output/bcfoutput-nofilter/5_C10_S1_L003.vcf.gz;
-bcftools index $WORK/lugdunensis-output/bcfoutput-nofilter/5_C10_S1_L003.vcf.gz;
+bcftools view -Ob $WORK/lugdunensis-output/nofilter/intersects/5_C10_S1_L003.vcf >$WORK/lugdunensis-output/nofilter/bcfoutput-nofilter/5_C10_S1_L003.vcf.gz;
+bcftools index $WORK/lugdunensis-output/nofilter/bcfoutput-nofilter/5_C10_S1_L003.vcf.gz;
 
-bcftools view -Ob $WORK/lugdunensis-output/nofilter/intersects/5_C10_S1_L004.vcf >$WORK/lugdunensis-output/bcfoutput-nofilter/5_C10_S1_L004.vcf.gz;
-bcftools index $WORK/lugdunensis-output/bcfoutput-nofilter/5_C10_S1_L004.vcf.gz;
+bcftools view -Ob $WORK/lugdunensis-output/nofilter/intersects/5_C10_S1_L004.vcf >$WORK/lugdunensis-output/nofilter/bcfoutput-nofilter/5_C10_S1_L004.vcf.gz;
+bcftools index $WORK/lugdunensis-output/nofilter/bcfoutput-nofilter/5_C10_S1_L004.vcf.gz;
 ########################################################################################
 
-bcftools view -Ob $WORK/lugdunensis-output/nofilter/intersects/5_C11_S2_L001.vcf >$WORK/lugdunensis-output/bcfoutput-nofilter/5_C11_S2_L001.vcf.gz;
-bcftools index $WORK/lugdunensis-output/bcfoutput-nofilter/5_C11_S2_L001.vcf.gz;
+bcftools view -Ob $WORK/lugdunensis-output/nofilter/intersects/5_C11_S2_L001.vcf >$WORK/lugdunensis-output/nofilter/bcfoutput-nofilter/5_C11_S2_L001.vcf.gz;
+bcftools index $WORK/lugdunensis-output/nofilter/bcfoutput-nofilter/5_C11_S2_L001.vcf.gz;
 
-bcftools view -Ob $WORK/lugdunensis-output/nofilter/intersects/5_C11_S2_L002.vcf >$WORK/lugdunensis-output/bcfoutput-nofilter/5_C11_S2_L002.vcf.gz;
-bcftools index $WORK/lugdunensis-output/bcfoutput-nofilter/5_C11_S2_L002.vcf.gz;
+bcftools view -Ob $WORK/lugdunensis-output/nofilter/intersects/5_C11_S2_L002.vcf >$WORK/lugdunensis-output/nofilter/bcfoutput-nofilter/5_C11_S2_L002.vcf.gz;
+bcftools index $WORK/lugdunensis-output/nofilter/bcfoutput-nofilter/5_C11_S2_L002.vcf.gz;
 
-bcftools view -Ob $WORK/lugdunensis-output/nofilter/intersects/5_C11_S2_L003.vcf >$WORK/lugdunensis-output/bcfoutput-nofilter/5_C11_S2_L003.vcf.gz;
-bcftools index $WORK/lugdunensis-output/bcfoutput-nofilter/5_C11_S2_L003.vcf.gz;
+bcftools view -Ob $WORK/lugdunensis-output/nofilter/intersects/5_C11_S2_L003.vcf >$WORK/lugdunensis-output/nofilter/bcfoutput-nofilter/5_C11_S2_L003.vcf.gz;
+bcftools index $WORK/lugdunensis-output/nofilter/bcfoutput-nofilter/5_C11_S2_L003.vcf.gz;
 
-bcftools view -Ob $WORK/lugdunensis-output/nofilter/intersects/5_C11_S2_L004.vcf >$WORK/lugdunensis-output/bcfoutput-nofilter/5_C11_S2_L004.vcf.gz;
-bcftools index $WORK/lugdunensis-output/bcfoutput-nofilter/5_C11_S2_L004.vcf.gz;
+bcftools view -Ob $WORK/lugdunensis-output/nofilter/intersects/5_C11_S2_L004.vcf >$WORK/lugdunensis-output/nofilter/bcfoutput-nofilter/5_C11_S2_L004.vcf.gz;
+bcftools index $WORK/lugdunensis-output/nofilter/bcfoutput-nofilter/5_C11_S2_L004.vcf.gz;
 ########################################################################################
 
-bcftools view -Ob $WORK/lugdunensis-output/nofilter/intersects/5_H3_S4_L001.vcf >$WORK/lugdunensis-output/bcfoutput-nofilter/5_H3_S4_L001.vcf.gz;
-bcftools index $WORK/lugdunensis-output/bcfoutput-nofilter/5_H3_S4_L001.vcf.gz;
+bcftools view -Ob $WORK/lugdunensis-output/nofilter/intersects/5_H3_S4_L001.vcf >$WORK/lugdunensis-output/nofilter/bcfoutput-nofilter/5_H3_S4_L001.vcf.gz;
+bcftools index $WORK/lugdunensis-output/nofilter/bcfoutput-nofilter/5_H3_S4_L001.vcf.gz;
 
 
-bcftools view -Ob $WORK/lugdunensis-output/nofilter/intersects/5_H3_S4_L002.vcf >$WORK/lugdunensis-output/bcfoutput-nofilter/5_H3_S4_L002.vcf.gz;
-bcftools index $WORK/lugdunensis-output/bcfoutput-nofilter/5_H3_S4_L002.vcf.gz;
+bcftools view -Ob $WORK/lugdunensis-output/nofilter/intersects/5_H3_S4_L002.vcf >$WORK/lugdunensis-output/nofilter/bcfoutput-nofilter/5_H3_S4_L002.vcf.gz;
+bcftools index $WORK/lugdunensis-output/nofilter/bcfoutput-nofilter/5_H3_S4_L002.vcf.gz;
 
-bcftools view -Ob $WORK/lugdunensis-output/nofilter/intersects/5_H3_S4_L003.vcf >$WORK/lugdunensis-output/bcfoutput-nofilter/5_H3_S4_L003.vcf.gz;
-bcftools index $WORK/lugdunensis-output/bcfoutput-nofilter/5_H3_S4_L003.vcf.gz;
+bcftools view -Ob $WORK/lugdunensis-output/nofilter/intersects/5_H3_S4_L003.vcf >$WORK/lugdunensis-output/nofilter/bcfoutput-nofilter/5_H3_S4_L003.vcf.gz;
+bcftools index $WORK/lugdunensis-output/nofilter/bcfoutput-nofilter/5_H3_S4_L003.vcf.gz;
 
-bcftools view -Ob $WORK/lugdunensis-output/nofilter/intersects/5_H3_S4_L004.vcf >$WORK/lugdunensis-output/bcfoutput-nofilter/5_H3_S4_L004.vcf.gz;
-bcftools index $WORK/lugdunensis-output/bcfoutput-nofilter/5_H3_S4_L004.vcf.gz;
+bcftools view -Ob $WORK/lugdunensis-output/nofilter/intersects/5_H3_S4_L004.vcf >$WORK/lugdunensis-output/nofilter/bcfoutput-nofilter/5_H3_S4_L004.vcf.gz;
+bcftools index $WORK/lugdunensis-output/nofilter/bcfoutput-nofilter/5_H3_S4_L004.vcf.gz;
 ########################################################################################
 
-bcftools view -Ob $WORK/lugdunensis-output/nofilter/intersects/8_A7_S7_L001.vcf >$WORK/lugdunensis-output/bcfoutput-nofilter/8_A7_S7_L001.vcf.gz;
-bcftools index $WORK/lugdunensis-output/bcfoutput-nofilter/8_A7_S7_L001.vcf.gz;
+bcftools view -Ob $WORK/lugdunensis-output/nofilter/intersects/8_A7_S7_L001.vcf >$WORK/lugdunensis-output/nofilter/bcfoutput-nofilter/8_A7_S7_L001.vcf.gz;
+bcftools index $WORK/lugdunensis-output/nofilter/bcfoutput-nofilter/8_A7_S7_L001.vcf.gz;
 
-bcftools view -Ob $WORK/lugdunensis-output/nofilter/intersects/8_A7_S7_L002.vcf >$WORK/lugdunensis-output/bcfoutput-nofilter/8_A7_S7_L002.vcf.gz;
-bcftools index $WORK/lugdunensis-output/bcfoutput-nofilter/8_A7_S7_L002.vcf.gz;
+bcftools view -Ob $WORK/lugdunensis-output/nofilter/intersects/8_A7_S7_L002.vcf >$WORK/lugdunensis-output/nofilter/bcfoutput-nofilter/8_A7_S7_L002.vcf.gz;
+bcftools index $WORK/lugdunensis-output/nofilter/bcfoutput-nofilter/8_A7_S7_L002.vcf.gz;
 
-bcftools view -Ob $WORK/lugdunensis-output/nofilter/intersects/8_A7_S7_L003.vcf >$WORK/lugdunensis-output/bcfoutput-nofilter/8_A7_S7_L003.vcf.gz;
-bcftools index $WORK/lugdunensis-output/bcfoutput-nofilter/8_A7_S7_L003.vcf.gz;
+bcftools view -Ob $WORK/lugdunensis-output/nofilter/intersects/8_A7_S7_L003.vcf >$WORK/lugdunensis-output/nofilter/bcfoutput-nofilter/8_A7_S7_L003.vcf.gz;
+bcftools index $WORK/lugdunensis-output/nofilter/bcfoutput-nofilter/8_A7_S7_L003.vcf.gz;
 
-bcftools view -Ob $WORK/lugdunensis-output/nofilter/intersects/8_A7_S7_L004.vcf >$WORK/lugdunensis-output/bcfoutput-nofilter/8_A7_S7_L004.vcf.gz;
-bcftools index $WORK/lugdunensis-output/bcfoutput-nofilter/8_A7_S7_L004.vcf.gz;
+bcftools view -Ob $WORK/lugdunensis-output/nofilter/intersects/8_A7_S7_L004.vcf >$WORK/lugdunensis-output/nofilter/bcfoutput-nofilter/8_A7_S7_L004.vcf.gz;
+bcftools index $WORK/lugdunensis-output/nofilter/bcfoutput-nofilter/8_A7_S7_L004.vcf.gz;
 
 ########################################################################################
 
-bcftools view -Ob $WORK/lugdunensis-output/nofilter/intersects/9_A2_S9_L001.vcf >$WORK/lugdunensis-output/bcfoutput-nofilter/9_A2_S9_L001.vcf.gz;
-bcftools index $WORK/lugdunensis-output/bcfoutput-nofilter/9_A2_S9_L001.vcf.gz;
+bcftools view -Ob $WORK/lugdunensis-output/nofilter/intersects/9_A2_S9_L001.vcf >$WORK/lugdunensis-output/nofilter/bcfoutput-nofilter/9_A2_S9_L001.vcf.gz;
+bcftools index $WORK/lugdunensis-output/nofilter/bcfoutput-nofilter/9_A2_S9_L001.vcf.gz;
 
-bcftools view -Ob $WORK/lugdunensis-output/nofilter/intersects/9_A2_S9_L002.vcf >$WORK/lugdunensis-output/bcfoutput-nofilter/9_A2_S9_L002.vcf.gz;
-bcftools index $WORK/lugdunensis-output/bcfoutput-nofilter/9_A2_S9_L002.vcf.gz;
+bcftools view -Ob $WORK/lugdunensis-output/nofilter/intersects/9_A2_S9_L002.vcf >$WORK/lugdunensis-output/nofilter/bcfoutput-nofilter/9_A2_S9_L002.vcf.gz;
+bcftools index $WORK/lugdunensis-output/nofilter/bcfoutput-nofilter/9_A2_S9_L002.vcf.gz;
 
-bcftools view -Ob $WORK/lugdunensis-output/nofilter/intersects/9_A2_S9_L003.vcf >$WORK/lugdunensis-output/bcfoutput-nofilter/9_A2_S9_L003.vcf.gz;
-bcftools index $WORK/lugdunensis-output/bcfoutput-nofilter/9_A2_S9_L003.vcf.gz;
+bcftools view -Ob $WORK/lugdunensis-output/nofilter/intersects/9_A2_S9_L003.vcf >$WORK/lugdunensis-output/nofilter/bcfoutput-nofilter/9_A2_S9_L003.vcf.gz;
+bcftools index $WORK/lugdunensis-output/nofilter/bcfoutput-nofilter/9_A2_S9_L003.vcf.gz;
 
 
-bcftools view -Ob $WORK/lugdunensis-output/nofilter/intersects/9_A2_S9_L004.vcf >$WORK/lugdunensis-output/bcfoutput-nofilter/9_A2_S9_L004.vcf.gz;
-bcftools index $WORK/lugdunensis-output/bcfoutput-nofilter/9_A2_S9_L004.vcf.gz;
+bcftools view -Ob $WORK/lugdunensis-output/nofilter/intersects/9_A2_S9_L004.vcf >$WORK/lugdunensis-output/nofilter/bcfoutput-nofilter/9_A2_S9_L004.vcf.gz;
+bcftools index $WORK/lugdunensis-output/nofilter/bcfoutput-nofilter/9_A2_S9_L004.vcf.gz;
 ########################################################################################
 
 
-bcftools view -Ob $WORK/lugdunensis-output/nofilter/intersects/10_F1_S10_L001.vcf >$WORK/lugdunensis-output/bcfoutput-nofilter/10_F1_S10_L001.vcf.gz;
-bcftools index $WORK/lugdunensis-output/bcfoutput-nofilter/10_F1_S10_L001.vcf.gz;
+bcftools view -Ob $WORK/lugdunensis-output/nofilter/intersects/10_F1_S10_L001.vcf >$WORK/lugdunensis-output/nofilter/bcfoutput-nofilter/10_F1_S10_L001.vcf.gz;
+bcftools index $WORK/lugdunensis-output/nofilter/bcfoutput-nofilter/10_F1_S10_L001.vcf.gz;
 
-bcftools view -Ob $WORK/lugdunensis-output/nofilter/intersects/10_F1_S10_L002.vcf >$WORK/lugdunensis-output/bcfoutput-nofilter/10_F1_S10_L002.vcf.gz;
-bcftools index $WORK/lugdunensis-output/bcfoutput-nofilter/10_F1_S10_L002.vcf.gz;
+bcftools view -Ob $WORK/lugdunensis-output/nofilter/intersects/10_F1_S10_L002.vcf >$WORK/lugdunensis-output/nofilter/bcfoutput-nofilter/10_F1_S10_L002.vcf.gz;
+bcftools index $WORK/lugdunensis-output/nofilter/bcfoutput-nofilter/10_F1_S10_L002.vcf.gz;
 
-bcftools view -Ob $WORK/lugdunensis-output/nofilter/intersects/10_F1_S10_L003.vcf >$WORK/lugdunensis-output/bcfoutput-nofilter/10_F1_S10_L003.vcf.gz;
-bcftools index $WORK/lugdunensis-output/bcfoutput-nofilter/10_F1_S10_L003.vcf.gz;
+bcftools view -Ob $WORK/lugdunensis-output/nofilter/intersects/10_F1_S10_L003.vcf >$WORK/lugdunensis-output/nofilter/bcfoutput-nofilter/10_F1_S10_L003.vcf.gz;
+bcftools index $WORK/lugdunensis-output/nofilter/bcfoutput-nofilter/10_F1_S10_L003.vcf.gz;
 
-bcftools view -Ob $WORK/lugdunensis-output/nofilter/intersects/10_F1_S10_L004.vcf >$WORK/lugdunensis-output/bcfoutput-nofilter/10_F1_S10_L004.vcf.gz;
-bcftools index $WORK/lugdunensis-output/bcfoutput-nofilter/10_F1_S10_L004.vcf.gz;
+bcftools view -Ob $WORK/lugdunensis-output/nofilter/intersects/10_F1_S10_L004.vcf >$WORK/lugdunensis-output/nofilter/bcfoutput-nofilter/10_F1_S10_L004.vcf.gz;
+bcftools index $WORK/lugdunensis-output/nofilter/bcfoutput-nofilter/10_F1_S10_L004.vcf.gz;
 ########################################################################################
 
-bcftools view -Ob $WORK/lugdunensis-output/nofilter/intersects/10_H5_S11_L001.vcf >$WORK/lugdunensis-output/bcfoutput-nofilter/10_H5_S11_L001.vcf.gz;
-bcftools index $WORK/lugdunensis-output/bcfoutput-nofilter/10_H5_S11_L001.vcf.gz;
+bcftools view -Ob $WORK/lugdunensis-output/nofilter/intersects/10_H5_S11_L001.vcf >$WORK/lugdunensis-output/nofilter/bcfoutput-nofilter/10_H5_S11_L001.vcf.gz;
+bcftools index $WORK/lugdunensis-output/nofilter/bcfoutput-nofilter/10_H5_S11_L001.vcf.gz;
 
-bcftools view -Ob $WORK/lugdunensis-output/nofilter/intersects/10_H5_S11_L002.vcf >$WORK/lugdunensis-output/bcfoutput-nofilter/10_H5_S11_L002.vcf.gz;
-bcftools index $WORK/lugdunensis-output/bcfoutput-nofilter/10_H5_S11_L002.vcf.gz;
+bcftools view -Ob $WORK/lugdunensis-output/nofilter/intersects/10_H5_S11_L002.vcf >$WORK/lugdunensis-output/nofilter/bcfoutput-nofilter/10_H5_S11_L002.vcf.gz;
+bcftools index $WORK/lugdunensis-output/nofilter/bcfoutput-nofilter/10_H5_S11_L002.vcf.gz;
 
-bcftools view -Ob $WORK/lugdunensis-output/nofilter/intersects/10_H5_S11_L003.vcf >$WORK/lugdunensis-output/bcfoutput-nofilter/10_H5_S11_L003.vcf.gz;
-bcftools index $WORK/lugdunensis-output/bcfoutput-nofilter/10_H5_S11_L003.vcf.gz;
+bcftools view -Ob $WORK/lugdunensis-output/nofilter/intersects/10_H5_S11_L003.vcf >$WORK/lugdunensis-output/nofilter/bcfoutput-nofilter/10_H5_S11_L003.vcf.gz;
+bcftools index $WORK/lugdunensis-output/nofilter/bcfoutput-nofilter/10_H5_S11_L003.vcf.gz;
 
-bcftools view -Ob $WORK/lugdunensis-output/nofilter/intersects/10_H5_S11_L004.vcf >$WORK/lugdunensis-output/bcfoutput-nofilter/10_H5_S11_L004.vcf.gz;
-bcftools index $WORK/lugdunensis-output/bcfoutput-nofilter/10_H5_S11_L004.vcf.gz;
+bcftools view -Ob $WORK/lugdunensis-output/nofilter/intersects/10_H5_S11_L004.vcf >$WORK/lugdunensis-output/nofilter/bcfoutput-nofilter/10_H5_S11_L004.vcf.gz;
+bcftools index $WORK/lugdunensis-output/nofilter/bcfoutput-nofilter/10_H5_S11_L004.vcf.gz;
 ########################################################################################
 
-bcftools view -Ob $WORK/lugdunensis-output/nofilter/intersects/13_G2_S12_L001.vcf >$WORK/lugdunensis-output/bcfoutput-nofilter/13_G2_S12_L001.vcf.gz;
-bcftools index $WORK/lugdunensis-output/bcfoutput-nofilter/13_G2_S12_L001.vcf.gz;
+bcftools view -Ob $WORK/lugdunensis-output/nofilter/intersects/13_G2_S12_L001.vcf >$WORK/lugdunensis-output/nofilter/bcfoutput-nofilter/13_G2_S12_L001.vcf.gz;
+bcftools index $WORK/lugdunensis-output/nofilter/bcfoutput-nofilter/13_G2_S12_L001.vcf.gz;
 
-bcftools view -Ob $WORK/lugdunensis-output/nofilter/intersects/13_G2_S12_L002.vcf >$WORK/lugdunensis-output/bcfoutput-nofilter/13_G2_S12_L002.vcf.gz;
-bcftools index $WORK/lugdunensis-output/bcfoutput-nofilter/13_G2_S12_L002.vcf.gz;
+bcftools view -Ob $WORK/lugdunensis-output/nofilter/intersects/13_G2_S12_L002.vcf >$WORK/lugdunensis-output/nofilter/bcfoutput-nofilter/13_G2_S12_L002.vcf.gz;
+bcftools index $WORK/lugdunensis-output/nofilter/bcfoutput-nofilter/13_G2_S12_L002.vcf.gz;
 
-bcftools view -Ob $WORK/lugdunensis-output/nofilter/intersects/13_G2_S12_L003.vcf >$WORK/lugdunensis-output/bcfoutput-nofilter/13_G2_S12_L003.vcf.gz;
-bcftools index $WORK/lugdunensis-output/bcfoutput-nofilter/13_G2_S12_L003.vcf.gz;
+bcftools view -Ob $WORK/lugdunensis-output/nofilter/intersects/13_G2_S12_L003.vcf >$WORK/lugdunensis-output/nofilter/bcfoutput-nofilter/13_G2_S12_L003.vcf.gz;
+bcftools index $WORK/lugdunensis-output/nofilter/bcfoutput-nofilter/13_G2_S12_L003.vcf.gz;
 
-bcftools view -Ob $WORK/lugdunensis-output/nofilter/intersects/13_G2_S12_L004.vcf >$WORK/lugdunensis-output/bcfoutput-nofilter/13_G2_S12_L004.vcf.gz;
-bcftools index $WORK/lugdunensis-output/bcfoutput-nofilter/13_G2_S12_L004.vcf.gz;
+bcftools view -Ob $WORK/lugdunensis-output/nofilter/intersects/13_G2_S12_L004.vcf >$WORK/lugdunensis-output/nofilter/bcfoutput-nofilter/13_G2_S12_L004.vcf.gz;
+bcftools index $WORK/lugdunensis-output/nofilter/bcfoutput-nofilter/13_G2_S12_L004.vcf.gz;
 ########################################################################################
 
-bcftools view -Ob $WORK/lugdunensis-output/nofilter/intersects/8_C9_S8_L001.vcf >$WORK/lugdunensis-output/bcfoutput-nofilter/8_C9_S8_L001.vcf.gz;
-bcftools index $WORK/lugdunensis-output/bcfoutput-nofilter/8_C9_S8_L001.vcf.gz;
+bcftools view -Ob $WORK/lugdunensis-output/nofilter/intersects/8_C9_S8_L001.vcf >$WORK/lugdunensis-output/nofilter/bcfoutput-nofilter/8_C9_S8_L001.vcf.gz;
+bcftools index $WORK/lugdunensis-output/nofilter/bcfoutput-nofilter/8_C9_S8_L001.vcf.gz;
 
-bcftools view -Ob $WORK/lugdunensis-output/nofilter/intersects/8_C9_S8_L002.vcf >$WORK/lugdunensis-output/bcfoutput-nofilter/8_C9_S8_L002.vcf.gz;
-bcftools index $WORK/lugdunensis-output/bcfoutput-nofilter/8_C9_S8_L002.vcf.gz;
+bcftools view -Ob $WORK/lugdunensis-output/nofilter/intersects/8_C9_S8_L002.vcf >$WORK/lugdunensis-output/nofilter/bcfoutput-nofilter/8_C9_S8_L002.vcf.gz;
+bcftools index $WORK/lugdunensis-output/nofilter/bcfoutput-nofilter/8_C9_S8_L002.vcf.gz;
 
-bcftools view -Ob $WORK/lugdunensis-output/nofilter/intersects/8_C9_S8_L003.vcf >$WORK/lugdunensis-output/bcfoutput-nofilter/8_C9_S8_L003.vcf.gz;
-bcftools index $WORK/lugdunensis-output/bcfoutput-nofilter/8_C9_S8_L003.vcf.gz;
+bcftools view -Ob $WORK/lugdunensis-output/nofilter/intersects/8_C9_S8_L003.vcf >$WORK/lugdunensis-output/nofilter/bcfoutput-nofilter/8_C9_S8_L003.vcf.gz;
+bcftools index $WORK/lugdunensis-output/nofilter/bcfoutput-nofilter/8_C9_S8_L003.vcf.gz;
 
-bcftools view -Ob $WORK/lugdunensis-output/nofilter/intersects/8_C9_S8_L004.vcf >$WORK/lugdunensis-output/bcfoutput-nofilter/8_C9_S8_L004.vcf.gz;
-bcftools index $WORK/lugdunensis-output/bcfoutput-nofilter/8_C9_S8_L004.vcf.gz;
+bcftools view -Ob $WORK/lugdunensis-output/nofilter/intersects/8_C9_S8_L004.vcf >$WORK/lugdunensis-output/nofilter/bcfoutput-nofilter/8_C9_S8_L004.vcf.gz;
+bcftools index $WORK/lugdunensis-output/nofilter/bcfoutput-nofilter/8_C9_S8_L004.vcf.gz;
 ########################################################################################
 
-bcftools view -Ob $WORK/lugdunensis-output/nofilter/intersects/5_D7_S3_L001.vcf >$WORK/lugdunensis-output/bcfoutput-nofilter/5_D7_S3_L001.vcf.gz;
-bcftools index $WORK/lugdunensis-output/bcfoutput-nofilter/5_D7_S3_L001.vcf.gz;
+bcftools view -Ob $WORK/lugdunensis-output/nofilter/intersects/5_D7_S3_L001.vcf >$WORK/lugdunensis-output/nofilter/bcfoutput-nofilter/5_D7_S3_L001.vcf.gz;
+bcftools index $WORK/lugdunensis-output/nofilter/bcfoutput-nofilter/5_D7_S3_L001.vcf.gz;
 
 
-bcftools view -Ob $WORK/lugdunensis-output/nofilter/intersects/5_D7_S3_L002.vcf >$WORK/lugdunensis-output/bcfoutput-nofilter/5_D7_S3_L002.vcf.gz;
-bcftools index $WORK/lugdunensis-output/bcfoutput-nofilter/5_D7_S3_L002.vcf.gz;
+bcftools view -Ob $WORK/lugdunensis-output/nofilter/intersects/5_D7_S3_L002.vcf >$WORK/lugdunensis-output/nofilter/bcfoutput-nofilter/5_D7_S3_L002.vcf.gz;
+bcftools index $WORK/lugdunensis-output/nofilter/bcfoutput-nofilter/5_D7_S3_L002.vcf.gz;
 
-bcftools view -Ob $WORK/lugdunensis-output/nofilter/intersects/5_D7_S3_L003.vcf >$WORK/lugdunensis-output/bcfoutput-nofilter/5_D7_S3_L003.vcf.gz;
-bcftools index $WORK/lugdunensis-output/bcfoutput-nofilter/5_D7_S3_L003.vcf.gz;
+bcftools view -Ob $WORK/lugdunensis-output/nofilter/intersects/5_D7_S3_L003.vcf >$WORK/lugdunensis-output/nofilter/bcfoutput-nofilter/5_D7_S3_L003.vcf.gz;
+bcftools index $WORK/lugdunensis-output/nofilter/bcfoutput-nofilter/5_D7_S3_L003.vcf.gz;
 
-bcftools view -Ob $WORK/lugdunensis-output/nofilter/intersects/5_D7_S3_L004.vcf >$WORK/lugdunensis-output/bcfoutput-nofilter/5_D7_S3_L004_q1000_dp100_dp100.vcf.gz;
-bcftools index $WORK/lugdunensis-output/bcfoutput-nofilter/5_D7_S3_L004.vcf.gz;
+bcftools view -Ob $WORK/lugdunensis-output/nofilter/intersects/5_D7_S3_L004.vcf >$WORK/lugdunensis-output/nofilter/bcfoutput-nofilter/5_D7_S3_L004_q1000_dp100_dp100.vcf.gz;
+bcftools index $WORK/lugdunensis-output/nofilter/bcfoutput-nofilter/5_D7_S3_L004.vcf.gz;
 
 
 ###########################################
-cd $WORK/lugdunensis-output/nofilter/intesects
+cd $WORK/lugdunensis-output/nofilter/intersects
 module load bcftools/1.8
 
 mkdir low-f
@@ -412,11 +411,11 @@ cp 8_A7* ./high-f
 cp 9_A2* ./high-f
 
 
-bcftools isec $WORK/lugdunensis-output/nofilter/intesects/low-f/*.gz -p $WORK/lugdunensis-output/nofilter/low -n=16;
+bcftools isec $WORK/lugdunensis-output/nofilter/intersects/low-f/*.gz -p $WORK/lugdunensis-output/nofilter/low -n=16;
 
-bcftools isec $WORK/lugdunensis-output/nofilter/intesects/high-f/*.gz -p $WORK/lugdunensis-output/nofilter/high -n=32 ;
+bcftools isec $WORK/lugdunensis-output/nofilter/intersects/high-f/*.gz -p $WORK/lugdunensis-output/nofilter/high -n=32 ;
 
-bcftools isec $WORK/lugdunensis-output/nofilter/intesects/*.gz -p $WORK/lugdunensis-output/nofilter/all -n=48;
+bcftools isec $WORK/lugdunensis-output/nofilter/intersects/*.gz -p $WORK/lugdunensis-output/nofilter/all -n=48;
 
 sed -i 's/^chr/Chromosome/' $WORK/lugdunensis-output/nofilter/low/*.vcf; 
 sed -i 's/^chr/Chromosome/' $WORK/lugdunensis-output/nofilter/high/*.vcf; 
