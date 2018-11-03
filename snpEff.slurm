@@ -4,6 +4,7 @@
 #SBATCH --job-name=snpEff
 #SBATCH --error=snpEff.%J.err
 #SBATCH --output=snpEff.%J.out
+cd $WORK/lugdunensis-output/bcfoutput3/
 mkdir new
 mkdir 1
 cd $WORK/lugdunensis-output/bcfoutput3/new/1/
