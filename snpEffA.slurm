@@ -4,6 +4,39 @@
 #SBATCH --job-name=update-snpEFF
 #SBATCH --error=snpEFF.%J.err
 #SBATCH --output=snpEFF.%J.out
+################################################################
+###  5_C10, 5_C11, 5_D7, 5_H3 are all low biofilm formers
+### 10_F1  10_H5  13_G2  3_B5  5_C4  8_C9 8_A7  9_A2 are all high biofilm formers
+cd $WORK/lugdunensis-output/bcfoutput3
+module load bcftools/1.8
+
+mkdir low3
+cp 5_C10* ./low3
+cp 5_C11* ./low3
+cp 5_H3* ./low3
+cp 5_D7* ./low3
+ 
+mkdir high3
+cp 10_F1* ./high3
+cp 10_H5* ./high3
+cp 13_G2* ./high3
+cp 3_B5* ./high3
+cp 5_C4* ./high3
+cp 8_C9* ./high3
+cp 8_A7* ./high3
+cp 9_A2* ./high3
+
+
+bcftools isec $WORK/lugdunensis-output/bcfoutput3/low3/*.gz -p $WORK/lugdunensis-output/low3 -n=16;
+
+bcftools isec $WORK/lugdunensis-output/bcfoutput3/high3/*.gz -p $WORK/lugdunensis-output/high3 -n=32 ;
+
+bcftools isec $WORK/lugdunensis-output/bcfoutput3/*.gz -p $WORK/lugdunensis-output/all3 -n=48;
+
+sed -i 's/^chr/Chromosome/' $WORK/lugdunensis-output/all3/*.vcf; 
+sed -i 's/^chr/Chromosome/' $WORK/lugdunensis-output/high3/*.vcf; 
+sed -i 's/^chr/Chromosome/' $WORK/lugdunensis-output/low3/*.vcf; 
+#############################################################
 module load java/1.8
 
 
