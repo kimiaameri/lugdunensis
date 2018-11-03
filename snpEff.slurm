@@ -31,29 +31,31 @@ bcftools isec $WORK/lugdunensis-output/bcfoutput3/highall/*.gz -p $WORK/lugdunen
 
 bcftools isec $WORK/lugdunensis-output/bcfoutput3/*.gz -p $WORK/lugdunensis-output/all -n=48;
 
-sed -i 's/^chr/Chromosome/' $WORK/lugdunensis-output/all /*.vcf; 
+sed -i 's/^chr/Chromosome/' $WORK/lugdunensis-output/all/*.vcf; 
 sed -i 's/^chr/Chromosome/' $WORK/lugdunensis-output/high/*.vcf; 
 sed -i 's/^chr/Chromosome/' $WORK/lugdunensis-output/low/*.vcf; 
 #############################################################
+cd $WORK/lugdunensis-output/
+mkdir permutations
 cd $WORK/lugdunensis-output/permutations/
-mkdir snpEff
-cd snpEff
+mkdir snpEffall
+cd snpEffall
 mkdir snpEff-summary
 mkdir snpEff-gene
 cd $WORK/lugdunensis
-java -Xmx4g -jar $WORK/lugdunensis-softwares/snpEff/snpEff.jar -v Staphylococcus_lugdunensis_n920143 $WORK/lugdunensis-output/all/0000.vcf > $WORK/lugdunensis-output/permutations/snpEff/snpEff-All-0.ann.vcf;
-mv $WORK/lugdunensis/snpEff_genes.txt $WORK/lugdunensis-output/permutations/snpEff/snpEff-gene/all-0-genes.txt;
-mv $WORK/lugdunensis/snpEff_summary.html $WORK/lugdunensis-output/permutations/snpEff/snpEff-summary/all-0-summary.html;
+java -Xmx4g -jar $WORK/lugdunensis-softwares/snpEff/snpEff.jar -v Staphylococcus_lugdunensis_n920143 $WORK/lugdunensis-output/all/0000.vcf > $WORK/lugdunensis-output/permutations/snpEffall/snpEff-All-0.ann.vcf;
+mv $WORK/lugdunensis/snpEff_genes.txt $WORK/lugdunensis-output/permutations/snpEffall/snpEff-gene/all-0-genes.txt;
+mv $WORK/lugdunensis/snpEff_summary.html $WORK/lugdunensis-output/permutations/snpEffall/snpEff-summary/all-0-summary.html;
 
 ######################################### highs######################
 
-java -Xmx4g -jar $WORK/lugdunensis-softwares/snpEff/snpEff.jar -v Staphylococcus_lugdunensis_n920143 $WORK/lugdunensis-output/high/0000.vcf > $WORK/lugdunensis-output/permutations/snpEff/snpEff-high-0.ann.vcf;
-mv $WORK/lugdunensis/snpEff_genes.txt $WORK/lugdunensis-output/permutations/snpEff/snpEff-gene/high-0-genes.txt;
-mv $WORK/lugdunensis/snpEff_summary.html $WORK/lugdunensis-output/permutations/snpEff/snpEff-summary/high-0-summary.html;
+java -Xmx4g -jar $WORK/lugdunensis-softwares/snpEff/snpEff.jar -v Staphylococcus_lugdunensis_n920143 $WORK/lugdunensis-output/high/0000.vcf > $WORK/lugdunensis-output/permutations/snpEffall/snpEff-high-0.ann.vcf;
+mv $WORK/lugdunensis/snpEff_genes.txt $WORK/lugdunensis-output/permutations/snpEffall/snpEff-gene/high-0-genes.txt;
+mv $WORK/lugdunensis/snpEff_summary.html $WORK/lugdunensis-output/permutations/snpEffall/snpEff-summary/high-0-summary.html;
 
 ######################################### low  ######################
 
-java -Xmx4g -jar $WORK/lugdunensis-softwares/snpEff/snpEff.jar -v Staphylococcus_lugdunensis_n920143 $WORK/lugdunensis-output/low/0000.vcf > $WORK/lugdunensis-output/permutations/snpEff/snpEff-low-0.ann.vcf;
-mv $WORK/lugdunensis/snpEff_genes.txt $WORK/lugdunensis-output/permutations/snpEff/snpEff-gene/low-0-genes.txt;
-mv $WORK/lugdunensis/snpEff_summary.html $WORK/lugdunensis-output/permutations/snpEff/snpEff-summary/low-0-summary.html;
+java -Xmx4g -jar $WORK/lugdunensis-softwares/snpEff/snpEff.jar -v Staphylococcus_lugdunensis_n920143 $WORK/lugdunensis-output/low/0000.vcf > $WORK/lugdunensis-output/permutations/snpEffall/snpEff-low-0.ann.vcf;
+mv $WORK/lugdunensis/snpEff_genes.txt $WORK/lugdunensis-output/permutations/snpEffall/snpEff-gene/low-0-genes.txt;
+mv $WORK/lugdunensis/snpEff_summary.html $WORK/lugdunensis-output/permutations/snpEffall/snpEff-summary/low-0-summary.html;
 
