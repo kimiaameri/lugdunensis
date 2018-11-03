@@ -4,37 +4,33 @@
 #SBATCH --job-name=snpEff
 #SBATCH --error=snpEff.%J.err
 #SBATCH --output=snpEff.%J.out
-cd $WORK/lugdunensis-output/bcfoutput3/
-mkdir new
-cd new
-mkdir 1
-cd $WORK/lugdunensis-output/bcfoutput3/new/1/
+
 module load bcftools/1.8
 cd $WORK/lugdunensis-output/bcfoutput3/
-mkdir low
-cp 5_C10* ./low
-cp 5_C11* ./low
-cp 5_H3* ./low
-cp 5_D7* ./low
+mkdir lowall
+cp 5_C10* ./lowall
+cp 5_C11* ./lowall
+cp 5_H3* ./lowall
+cp 5_D7* ./lowall
  
-mkdir high
-cp 10_F1* ./high
-cp 10_H5* ./high
-cp 13_G2* ./high
-cp 3_B5* ./high
-cp 5_C4* ./high
-cp 8_C9* ./high
-cp 8_A7* ./high
-cp 9_A2* ./high
+mkdir highall
+cp 10_F1* ./highall
+cp 10_H5* ./highall
+cp 13_G2* ./highall
+cp 3_B5* ./highall
+cp 5_C4* ./highall
+cp 8_C9* ./highall
+cp 8_A7* ./highall
+cp 9_A2* ./highall
 
 cd $WORK/lugdunensis-output/
 mkdir permutations
 
-bcftools isec $WORK/lugdunensis-output/bcfoutput3/new/1/low/*.gz -p $WORK/lugdunensis-output/permutations/low -n=16;
+bcftools isec $WORK/lugdunensis-output/bcfoutput3/lowall/*.gz -p $WORK/lugdunensis-output/permutations/low -n=16;
 
-bcftools isec $WORK/lugdunensis-output/bcfoutput3/new/1/high/*.gz -p $WORK/lugdunensis-output/permutations/high -n=32 ;
+bcftools isec $WORK/lugdunensis-output/bcfoutput3/highall/*.gz -p $WORK/lugdunensis-output/permutations/high -n=32 ;
 
-bcftools isec $WORK/lugdunensis-output/bcfoutput3/new/1/*.gz -p $WORK/lugdunensis-output/permutations/all -n=48;
+bcftools isec $WORK/lugdunensis-output/bcfoutput3/*.gz -p $WORK/lugdunensis-output/permutations/all -n=48;
 
 sed -i 's/^chr/Chromosome/' $WORK/lugdunensis-output/permutations/all /*.vcf; 
 sed -i 's/^chr/Chromosome/' $WORK/lugdunensis-output/permutations/high/*.vcf; 
