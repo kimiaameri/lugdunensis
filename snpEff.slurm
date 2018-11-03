@@ -6,6 +6,7 @@
 #SBATCH --output=snpEff.%J.out
 cd $WORK/lugdunensis-output/bcfoutput3/
 mkdir new
+cd new
 mkdir 1
 cd $WORK/lugdunensis-output/bcfoutput3/new/1/
 module load bcftools/1.8
