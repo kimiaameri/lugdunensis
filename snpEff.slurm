@@ -10,7 +10,7 @@ cd new
 mkdir 1
 cd $WORK/lugdunensis-output/bcfoutput3/new/1/
 module load bcftools/1.8
-
+cd $WORK/lugdunensis-output/bcfoutput3/
 mkdir low
 cp 5_C10* ./low
 cp 5_C11* ./low
