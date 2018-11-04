@@ -8,4 +8,5 @@ sbatch trim-5_C4.slurm;
 sbatch trim-5_H3.slurm;
 sbatch trim-8_A7.slurm;
 sbatch trim-9_A2.slurm;
-
+sbatch trim-5_D7.slurm;
+sbatch trim-8_c9.slurm;
