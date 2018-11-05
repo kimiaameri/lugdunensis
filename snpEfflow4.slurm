@@ -27,7 +27,7 @@ cp 8_A7* ./all4
 cp 9_A2* ./all4
 cp 5_C11* ./all4
 cp 5_H3* ./all4
-cp 5_D7* ./all4
+cp 5_C10* ./all4
 
 
 bcftools isec $WORK/lugdunensis-output/bcfoutput/low4/*.gz -p $WORK/lugdunensis-output/low4 -n=12;
