@@ -40,7 +40,7 @@ bcftools isec $WORK/lugdunensis-output/bcfoutput/high5/*.gz -p $WORK/lugdunensis
 bcftools isec $WORK/lugdunensis-output/bcfoutput/all5/*.gz -p $WORK/lugdunensis-output/all5 -n=44;
 
 #sed -i 's/^chr/Chromosome/' $WORK/lugdunensis-output/all5/*.vcf; 
-sed -i 's/^chr/Chromosome/' $WORK/lugdunensis-output/high/*.vcf; 
+sed -i 's/^chr/Chromosome/' $WORK/lugdunensis-output/high5/*.vcf; 
 sed -i 's/^chr/Chromosome/' $WORK/lugdunensis-output/low5/*.vcf; 
 #############################################################
 module load java/1.8
