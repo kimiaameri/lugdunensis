@@ -259,6 +259,6 @@ bcftools index $WORK/lugdunensis-output/bcfoutput/5_D7_S3_L003_q1000_dp100.vcf.g
 
 $WORK/lugdunensis-softwares/freebayes/vcflib/bin/vcffilter -f "QUAL > 1000" $WORK/lugdunensis-output/freebayes/5_D7_S3_L004.vcf > $WORK/lugdunensis-output/vcffilterq1000/5_D7_S3_L004_q1000.vcf 
 $WORK/lugdunensis-softwares/freebayes/vcflib/bin/vcffilter -f "DP > 100" $WORK/lugdunensis-output/vcffilterq1000/5_D7_S3_L004_q1000.vcf > $WORK/lugdunensis-output/vcffilterq1000-dp100/5_D7_S3_L004_q1000_dp100.vcf;
-bcftools view -Ob $WORK/lugdunensis-output/vcffilterq1000-dp100/5_D7_S3_L004_q1000_dp100.vcf >$WORK/lugdunensis-output/bcfoutput/5_D7_S3_L004_q1000_dp100_dp100.vcf.gz;
+bcftools view -Ob $WORK/lugdunensis-output/vcffilterq1000-dp100/5_D7_S3_L004_q1000_dp100.vcf >$WORK/lugdunensis-output/bcfoutput/5_D7_S3_L004_q1000_dp100.vcf.gz;
 bcftools index $WORK/lugdunensis-output/bcfoutput/5_D7_S3_L004_q1000_dp100.vcf.gz;
 ##
