@@ -7,9 +7,9 @@
 ##### sbatch bwa.slurm
 
 ##### sbatch bam.slurm
-##### sbatch picard.slurm
+##### sh picard.sh
 ##### sh freebayes.sh
-##### sbatch bcf-vcf.slurm
+##### sbatch VCF-1000-100.slurm
 ##### sbatch persisters.slurm
 ##### sh snpEff.sh
 ##### sbatch snpEff.slurm
