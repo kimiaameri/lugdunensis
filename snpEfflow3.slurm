@@ -26,7 +26,7 @@ cp 8_C9* ./all3
 cp 8_A7* ./all3
 cp 9_A2* ./all3
 cp 5_C11* ./all3
-cp 5_H3* ./all3
+cp 5_C10* ./all3
 cp 5_D7* ./all3
 
 
