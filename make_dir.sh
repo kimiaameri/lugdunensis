@@ -4,6 +4,9 @@ mkdir lugdunensis-output
 cd lugdunensis-output
 mkdir trimmomatic
 mkdir samfiles
+mkdir flagsam
+mkdir sortsam
+mkdir bamfiles
 mkdir picard
 mkdir freebayes
 mkdir vcffilterq5000
