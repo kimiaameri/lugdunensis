@@ -39,9 +39,9 @@ bcftools isec $WORK/lugdunensis-output/bcfoutput/high6/*.gz -p $WORK/lugdunensis
 
 bcftools isec $WORK/lugdunensis-output/bcfoutput/all6/*.gz -p $WORK/lugdunensis-output/all6 -n=44;
 
-#sed -i 's/^chr/Chromosome/' $WORK/lugdunensis-output/all5/*.vcf; 
+sed -i 's/^chr/Chromosome/' $WORK/lugdunensis-output/all6/*.vcf; 
 sed -i 's/^chr/Chromosome/' $WORK/lugdunensis-output/high6/*.vcf; 
-sed -i 's/^chr/Chromosome/' $WORK/lugdunensis-output/low6/*.vcf; 
+#sed -i 's/^chr/Chromosome/' $WORK/lugdunensis-output/low6/*.vcf; 
 #############################################################
 module load java/1.8
 cd $WORK/lugdunensis-output/snpEff/
