@@ -1,0 +1,36 @@
+#!/bin/sh
+#SBATCH --time=20:00:00   # Run time in hh:mm:ss
+##SBATCH --mem-per-cpu=8192       # Maximum memory required per CPU (in megabytes)
+#SBATCH --job-name=snpeff
+#SBATCH --error=snpeff.%J.err
+#SBATCH --output=snpeff.%J.out
+################################################################
+###  5_C10, 5_C11, 5_D7, 5_H3 are all low biofilm formers
+### 10_F1  10_H5  13_G2  3_B5  5_C4  8_C9 8_A7  9_A2 are all high biofilm formers
+#13_G2_S12_L001_
+cd $WORK/lugdunensis-output/bcfoutput
+module load bcftools/1.8
+#$WORK/lugdunensis-output/bcfoutput/5_C4_S6_L001_q1000_dp100.vcf.gz 
+bcftools isec $WORK/lugdunensis-output/bcfoutput/10_F1_S10_L001_q1000_dp100.vcf.gz $WORK/lugdunensis-output/bcfoutput/10_F1_S10_L002_q1000_dp100.vcf.gz $WORK/lugdunensis-output/bcfoutput/10_F1_S10_L003_q1000_dp100.vcf.gz $WORK/lugdunensis-output/bcfoutput/10_F1_S10_L004_q1000_dp100.vcf.gz $WORK/lugdunensis-output/bcfoutput/10_H5_S11_L001_q1000_dp100.vcf.gz $WORK/lugdunensis-output/bcfoutput/10_H5_S11_L002_q1000_dp100.vcf.gz $WORK/lugdunensis-output/bcfoutput/10_H5_S11_L003_q1000_dp100.vcf.gz $WORK/lugdunensis-output/bcfoutput/10_H5_S11_L004_q1000_dp100.vcf.gz $WORK/lugdunensis-output/bcfoutput/13_G2_S12_L001_q1000_dp100.vcf.gz $WORK/lugdunensis-output/bcfoutput/13_G2_S12_L002_q1000_dp100.vcf.gz $WORK/lugdunensis-output/bcfoutput/13_G2_S12_L003_q1000_dp100.vcf.gz $WORK/lugdunensis-output/bcfoutput/13_G2_S12_L003_q1000_dp100.vcf.gz $WORK/lugdunensis-output/bcfoutput/3_B5_S5_L001_q1000_dp100.vcf.gz $WORK/lugdunensis-output/bcfoutput/3_B5_S5_L002_q1000_dp100.vcf.gz $WORK/lugdunensis-output/bcfoutput/3_B5_S5_L003_q1000_dp100.vcf.gz $WORK/lugdunensis-output/bcfoutput/3_B5_S5_L004_q1000_dp100.vcf.gz $WORK/lugdunensis-output/bcfoutput/5_C10_S1_L001_q1000_dp100.vcf.gz $WORK/lugdunensis-output/bcfoutput/5_C10_S1_L002_q1000_dp100.vcf.gz $WORK/lugdunensis-output/bcfoutput/5_C10_S1_L003_q1000_dp100.vcf.gz $WORK/lugdunensis-output/bcfoutput/5_C10_S1_L004_q1000_dp100.vcf.gz $WORK/lugdunensis-output/bcfoutput/5_C11_S2_L001_q1000_dp100.vcf.gz $WORK/lugdunensis-output/bcfoutput/5_C11_S2_L002_q1000_dp100.vcf.gz $WORK/lugdunensis-output/bcfoutput/5_C11_S2_L003_q1000_dp100.vcf.gz $WORK/lugdunensis-output/bcfoutput/5_C11_S2_L004_q1000_dp100.vcf.gz $WORK/lugdunensis-output/bcfoutput/5_C4_S6_L001_q1000_dp100.vcf.gz $WORK/lugdunensis-output/bcfoutput/5_C4_S6_L002_q1000_dp100.vcf.gz $WORK/lugdunensis-output/bcfoutput/5_C4_S6_L004_q1000_dp100.vcf.gz  $WORK/lugdunensis-output/bcfoutput/5_D7_S3_L001_q1000_dp100.vcf.gz $WORK/lugdunensis-output/bcfoutput/5_D7_S3_L002_q1000_dp100.vcf.gz $WORK/lugdunensis-output/bcfoutput/5_D7_S3_L003_q1000_dp100.vcf.gz $WORK/lugdunensis-output/bcfoutput/5_D7_S3_L004_q1000_dp100.vcf.gz $WORK/lugdunensis-output/bcfoutput/5_H3_S4_L001_q1000_dp100.vcf.gz $WORK/lugdunensis-output/bcfoutput/5_H3_S4_L002_q1000_dp100.vcf.gz $WORK/lugdunensis-output/bcfoutput/5_H3_S4_L003_q1000_dp100.vcf.gz $WORK/lugdunensis-output/bcfoutput/5_H3_S4_L004_q1000_dp100.vcf.gz $WORK/lugdunensis-output/bcfoutput/8_A7_S7_L001_q1000_dp100.vcf.gz $WORK/lugdunensis-output/bcfoutput/8_A7_S7_L002_q1000_dp100.vcf.gz $WORK/lugdunensis-output/bcfoutput/8_A7_S7_L003_q1000_dp100.vcf.gz $WORK/lugdunensis-output/bcfoutput/8_A7_S7_L004_q1000_dp100.vcf.gz $WORK/lugdunensis-output/bcfoutput/8_C9_S8_L001_q1000_dp100.vcf.gz $WORK/lugdunensis-output/bcfoutput/8_C9_S8_L002_q1000_dp100.vcf.gz $WORK/lugdunensis-output/bcfoutput/8_C9_S8_L003_q1000_dp100.vcf.gz $WORK/lugdunensis-output/bcfoutput/8_C9_S8_L004_q1000_dp100.vcf.gz $WORK/lugdunensis-output/bcfoutput/9_A2_S9_L001_q1000_dp100.vcf.gz $WORK/lugdunensis-output/bcfoutput/9_A2_S9_L002_q1000_dp100.vcf.gz $WORK/lugdunensis-output/bcfoutput/9_A2_S9_L003_q1000_dp100.vcf.gz $WORK/lugdunensis-output/bcfoutput/9_A2_S9_L004_q1000_dp100.vcf.gz -p $WORK/lugdunensis-output/all34 -n=47;
+bcftools isec  $WORK/lugdunensis-output/bcfoutput/10_F1_S10_L001_q1000_dp100.vcf.gz $WORK/lugdunensis-output/bcfoutput/10_F1_S10_L002_q1000_dp100.vcf.gz $WORK/lugdunensis-output/bcfoutput/10_F1_S10_L003_q1000_dp100.vcf.gz $WORK/lugdunensis-output/bcfoutput/10_F1_S10_L004_q1000_dp100.vcf.gz $WORK/lugdunensis-output/bcfoutput/10_H5_S11_L001_q1000_dp100.vcf.gz $WORK/lugdunensis-output/bcfoutput/10_H5_S11_L002_q1000_dp100.vcf.gz $WORK/lugdunensis-output/bcfoutput/10_H5_S11_L003_q1000_dp100.vcf.gz $WORK/lugdunensis-output/bcfoutput/10_H5_S11_L004_q1000_dp100.vcf.gz $WORK/lugdunensis-output/bcfoutput/13_G2_S12_L001_q1000_dp100.vcf.gz $WORK/lugdunensis-output/bcfoutput/13_G2_S12_L002_q1000_dp100.vcf.gz $WORK/lugdunensis-output/bcfoutput/13_G2_S12_L003_q1000_dp100.vcf.gz $WORK/lugdunensis-output/bcfoutput/13_G2_S12_L004_q1000_dp100.vcf.gz $WORK/lugdunensis-output/bcfoutput/3_B5_S5_L001_q1000_dp100.vcf.gz $WORK/lugdunensis-output/bcfoutput/3_B5_S5_L002_q1000_dp100.vcf.gz $WORK/lugdunensis-output/bcfoutput/3_B5_S5_L003_q1000_dp100.vcf.gz $WORK/lugdunensis-output/bcfoutput/3_B5_S5_L004_q1000_dp100.vcf.gz $WORK/lugdunensis-output/bcfoutput/5_C4_S6_L001_q1000_dp100.vcf.gz $WORK/lugdunensis-output/bcfoutput/5_C4_S6_L002_q1000_dp100.vcf.gz $WORK/lugdunensis-output/bcfoutput/5_C4_S6_L004_q1000_dp100.vcf.gz $WORK/lugdunensis-output/bcfoutput/8_A7_S7_L001_q1000_dp100.vcf.gz $WORK/lugdunensis-output/bcfoutput/8_A7_S7_L002_q1000_dp100.vcf.gz $WORK/lugdunensis-output/bcfoutput/8_A7_S7_L003_q1000_dp100.vcf.gz $WORK/lugdunensis-output/bcfoutput/8_A7_S7_L004_q1000_dp100.vcf.gz $WORK/lugdunensis-output/bcfoutput/8_C9_S8_L001_q1000_dp100.vcf.gz $WORK/lugdunensis-output/bcfoutput/8_C9_S8_L002_q1000_dp100.vcf.gz $WORK/lugdunensis-output/bcfoutput/8_C9_S8_L003_q1000_dp100.vcf.gz $WORK/lugdunensis-output/bcfoutput/8_C9_S8_L004_q1000_dp100.vcf.gz $WORK/lugdunensis-output/bcfoutput/9_A2_S9_L001_q1000_dp100.vcf.gz $WORK/lugdunensis-output/bcfoutput/9_A2_S9_L002_q1000_dp100.vcf.gz $WORK/lugdunensis-output/bcfoutput/9_A2_S9_L003_q1000_dp100.vcf.gz $WORK/lugdunensis-output/bcfoutput/9_A2_S9_L004_q1000_dp100.vcf.gz -p $WORK/lugdunensis-output/high34 -n=31
+sed -i 's/^chr/Chromosome/' $WORK/lugdunensis-output/all34/*.vcf; 
+sed -i 's/^chr/Chromosome/' $WORK/lugdunensis-output/high34/*.vcf; 
+#############################################################
+module load java/1.8
+cd $WORK/lugdunensis-output/snpEff/
+mkdir high34
+cd high34
+mkdir snpEff-gene
+mkdir snpEff-summary
+cd $WORK/lugdunensis
+java -Xmx4g -jar $WORK/lugdunensis-softwares/snpEff/snpEff.jar -v Staphylococcus_lugdunensis_n920143 $WORK/lugdunensis-output/all34/0000.vcf > $WORK/lugdunensis-output/snpEff/high34/snpEff-Allhigh34-0.ann.vcf;
+mv $WORK/lugdunensis/snpEff_genes.txt $WORK/lugdunensis-output/snpEff/high34/snpEff-gene/all-high34-0-genes.txt;
+mv $WORK/lugdunensis/snpEff_summary.html $WORK/lugdunensis-output/snpEff/high34/snpEff-summary/all-high34-0-summary.html;
+
+######################################### highs######################
+
+java -Xmx4g -jar $WORK/lugdunensis-softwares/snpEff/snpEff.jar -v Staphylococcus_lugdunensis_n920143 $WORK/lugdunensis-output/high34/0000.vcf > $WORK/lugdunensis-output/snpEff/high34/snpEff-high34-0.ann.vcf;
+#mv $WORK/lugdunensis/snpEff_genes.txt $WORK/lugdunensis-output/snpEff/high34/snpEff-gene/high34-0-genes.txt;
+#mv $WORK/lugdunensis/snpEff_summary.html $WORK/lugdunensis-output/snpEff/high34/snpEff-summary/high34-0-summary.html;
+
+
