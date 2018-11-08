@@ -30,7 +30,7 @@ mv $WORK/lugdunensis/snpEff_summary.html $WORK/lugdunensis-output/snpEff/high30/
 ######################################### highs######################
 
 java -Xmx4g -jar $WORK/lugdunensis-softwares/snpEff/snpEff.jar -v Staphylococcus_lugdunensis_n920143 $WORK/lugdunensis-output/high30/0000.vcf > $WORK/lugdunensis-output/snpEff/high30/snpEff-high30-0.ann.vcf;
-#mv $WORK/lugdunensis/snpEff_genes.txt $WORK/lugdunensis-output/snpEff/high30/snpEff-gene/high30-0-genes.txt;
-#mv $WORK/lugdunensis/snpEff_summary.html $WORK/lugdunensis-output/snpEff/high30/snpEff-summary/high30-0-summary.html;
+mv $WORK/lugdunensis/snpEff_genes.txt $WORK/lugdunensis-output/snpEff/high30/snpEff-gene/high30-0-genes.txt;
+mv $WORK/lugdunensis/snpEff_summary.html $WORK/lugdunensis-output/snpEff/high30/snpEff-summary/high30-0-summary.html;
 
 
