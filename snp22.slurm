@@ -28,7 +28,7 @@ mv $WORK/lugdunensis/snpEff_summary.html $WORK/lugdunensis-output/snpEff/high22/
 ######################################### highs######################
 
 java -Xmx4g -jar $WORK/lugdunensis-softwares/snpEff/snpEff.jar -v Staphylococcus_lugdunensis_n920143 $WORK/lugdunensis-output/high22/0000.vcf > $WORK/lugdunensis-output/snpEff/high22/snpEff-high22-0.ann.vcf;
-#mv $WORK/lugdunensis/snpEff_genes.txt $WORK/lugdunensis-output/snpEff/high22/snpEff-gene/high22-0-genes.txt;
-#mv $WORK/lugdunensis/snpEff_summary.html $WORK/lugdunensis-output/snpEff/high22/snpEff-summary/high22-0-summary.html;
+mv $WORK/lugdunensis/snpEff_genes.txt $WORK/lugdunensis-output/snpEff/high22/snpEff-gene/high22-0-genes.txt;
+mv $WORK/lugdunensis/snpEff_summary.html $WORK/lugdunensis-output/snpEff/high22/snpEff-summary/high22-0-summary.html;
 
 
