@@ -23,13 +23,13 @@ cd high47
 mkdir snpEff-gene
 mkdir snpEff-summary
 cd $WORK/lugdunensis
-java -Xmx4g -jar $WORK/lugdunensis-softwares/snpEff/snpEff.jar -v Staphylococcus_lugdunensis_n920144 $WORK/lugdunensis-output/all47/0000.vcf > $WORK/lugdunensis-output/snpEff/high47/snpEff-Allhigh47-0.ann.vcf;
+java -Xmx4g -jar $WORK/lugdunensis-softwares/snpEff/snpEff.jar -v Staphylococcus_lugdunensis_n920143 $WORK/lugdunensis-output/all47/0000.vcf > $WORK/lugdunensis-output/snpEff/high47/snpEff-Allhigh47-0.ann.vcf;
 mv $WORK/lugdunensis/snpEff_genes.txt $WORK/lugdunensis-output/snpEff/high47/snpEff-gene/all-high47-0-genes.txt;
 mv $WORK/lugdunensis/snpEff_summary.html $WORK/lugdunensis-output/snpEff/high47/snpEff-summary/all-high47-0-summary.html;
 
 ######################################### highs######################
 
-java -Xmx4g -jar $WORK/lugdunensis-softwares/snpEff/snpEff.jar -v Staphylococcus_lugdunensis_n920144 $WORK/lugdunensis-output/high47/0000.vcf > $WORK/lugdunensis-output/snpEff/high47/snpEff-high47-0.ann.vcf;
+java -Xmx4g -jar $WORK/lugdunensis-softwares/snpEff/snpEff.jar -v Staphylococcus_lugdunensis_n920143 $WORK/lugdunensis-output/high47/0000.vcf > $WORK/lugdunensis-output/snpEff/high47/snpEff-high47-0.ann.vcf;
 mv $WORK/lugdunensis/snpEff_genes.txt $WORK/lugdunensis-output/snpEff/high47/snpEff-gene/high47-0-genes.txt;
 mv $WORK/lugdunensis/snpEff_summary.html $WORK/lugdunensis-output/snpEff/high47/snpEff-summary/high47-0-summary.html;
 
