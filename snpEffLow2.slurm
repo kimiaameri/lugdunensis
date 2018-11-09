@@ -40,8 +40,8 @@ sed -i 's/^chr/Chromosome/' $WORK/lugdunensis-output/LOW2/*.vcf;
 #############################################################
 module load java/1.8
 cd $WORK/lugdunensis-output/snpEff/
-mkdir low2
-cd low2
+mkdir LOW2
+cd LOW2
 mkdir snpEff-gene
 mkdir snpEff-summary
 cd $WORK/lugdunensis
