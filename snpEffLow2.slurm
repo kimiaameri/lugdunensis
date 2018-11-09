@@ -30,9 +30,9 @@ cp 5_H3* ./ALL2
 cp 5_D7* ./ALL2
 
 
-bcftools isec $WORK/lugdunensis-output/bcfoutput/low2/*.gz -p $WORK/lugdunensis-output/LOW2 -n=12;
+bcftools isec $WORK/lugdunensis-output/bcfoutput/LOW2/*.gz -p $WORK/lugdunensis-output/LOW2 -n=12;
 
-bcftools isec $WORK/lugdunensis-output/bcfoutput/all2/*.gz -p $WORK/lugdunensis-output/ALL2 -n=44;
+bcftools isec $WORK/lugdunensis-output/bcfoutput/ALL2/*.gz -p $WORK/lugdunensis-output/ALL2 -n=44;
 
 sed -i 's/^chr/Chromosome/' $WORK/lugdunensis-output/ALL2/*.vcf; 
 #sed -i 's/^chr/Chromosome/' $WORK/lugdunensis-output/high/*.vcf; 
@@ -45,7 +45,7 @@ cd low2
 mkdir snpEff-gene
 mkdir snpEff-summary
 cd $WORK/lugdunensis
-java -Xmx4g -jar $WORK/lugdunensis-softwares/snpEff/snpEff.jar -v Staphylococcus_lugdunensis_n920143 $WORK/lugdunensis-output/LOW2/0000.vcf > $WORK/lugdunensis-output/snpEff/LOW2/snpEff-AllLOW2-0.ann.vcf;
+java -Xmx4g -jar $WORK/lugdunensis-softwares/snpEff/snpEff.jar -v Staphylococcus_lugdunensis_n920143 $WORK/lugdunensis-output/ALL2/0000.vcf > $WORK/lugdunensis-output/snpEff/LOW2/snpEff-AllLOW2-0.ann.vcf;
 mv $WORK/lugdunensis/snpEff_genes.txt $WORK/lugdunensis-output/snpEff/LOW2/snpEff-gene/all-LOW2-0-genes.txt;
 mv $WORK/lugdunensis/snpEff_summary.html $WORK/lugdunensis-output/snpEff/LOW2/snpEff-summary/all-LOW2-0-summary.html;
 
