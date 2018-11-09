@@ -10,15 +10,15 @@
 cd $WORK/lugdunensis-output/bcfoutput
 module load bcftools/1.8
 
-mkdir HIGH1
+mkdir HIGH5
 #cp 10_F1* ./HIGH1
-cp 10_H5* ./HIGH1
-cp 13_G2* ./HIGH1
-cp 3_B5* ./HIGH1
-cp 5_C4* ./HIGH1
-cp 8_C9* ./HIGH1
-cp 8_A7* ./HIGH1
-cp 9_A2* ./HIGH1 
+cp 10_H5* ./HIGH5
+cp 13_G2* ./HIGH5
+cp 3_B5* ./HIGH5
+cp 5_C4* ./HIGH5
+cp 8_C9* ./HIGH5
+cp 8_A7* ./HIGH5
+cp 9_A2* ./HIGH5 
 mkdir ALL5
 #cp 10_F1* ./ALL5
 cp 10_H5* ./ALL5
