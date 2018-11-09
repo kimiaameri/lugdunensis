@@ -53,7 +53,7 @@ mv $WORK/lugdunensis/snpEff_summary.html $WORK/lugdunensis-output/snpEff/HIGH5/s
 
 ######################################### highs######################
 
-java -Xmx4g -jar $WORK/lugdunensis-softwares/snpEff/snpEff.jar -v Staphylococcus_lugdunensis_n920143 $WORK/lugdunensis-output/high/0000.vcf > $WORK/lugdunensis-output/snpEff/snpEff-high-0.ann.vcf;
+java -Xmx4g -jar $WORK/lugdunensis-softwares/snpEff/snpEff.jar -v Staphylococcus_lugdunensis_n920143 $WORK/lugdunensis-output/HIGH5/0000.vcf > $WORK/lugdunensis-output/snpEff/HIGH5/snpEff-HIGH5-0.ann.vcf;
 mv $WORK/lugdunensis/snpEff_genes.txt $WORK/lugdunensis-output/snpEff/HIGH5/snpEff-gene/HIGH5-0-genes.txt;
 mv $WORK/lugdunensis/snpEff_summary.html $WORK/lugdunensis-output/snpEff/HIGH5/snpEff-summary/HIGH5-0-summary.html;
 
