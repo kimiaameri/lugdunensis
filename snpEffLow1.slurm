@@ -12,7 +12,7 @@ module load bcftools/1.8
 
 mkdir LOW1
 #cp 5_C10* ./LOW1
-cp 5_C11* ./low1
+cp 5_C11* ./LOW1
 cp 5_H3* ./LOW1
 cp 5_D7* ./LOW1
  
@@ -45,7 +45,7 @@ cd LOW1
 mkdir snpEff-gene
 mkdir snpEff-summary
 cd $WORK/lugdunensis
-java -Xmx4g -jar $WORK/lugdunensis-softwares/snpEff/snpEff.jar -v Staphylococcus_lugdunensis_n920143 $WORK/lugdunensis-output/LOW1/0000.vcf > $WORK/lugdunensis-output/snpEff/LOW1/snpEff-AllLOW1-0.ann.vcf;
+java -Xmx4g -jar $WORK/lugdunensis-softwares/snpEff/snpEff.jar -v Staphylococcus_lugdunensis_n920143 $WORK/lugdunensis-output/ALL1/0000.vcf > $WORK/lugdunensis-output/snpEff/LOW1/snpEff-AllLOW1-0.ann.vcf;
 mv $WORK/lugdunensis/snpEff_genes.txt $WORK/lugdunensis-output/snpEff/LOW1/snpEff-gene/all-LOW1-0-genes.txt;
 mv $WORK/lugdunensis/snpEff_summary.html $WORK/lugdunensis-output/snpEff/LOW1/snpEff-summary/all-LOW1-0-summary.html;
 
