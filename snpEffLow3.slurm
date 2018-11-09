@@ -27,7 +27,6 @@ cp 8_A7* ./ALL3
 cp 9_A2* ./ALL3
 cp 5_C11* ./ALL3
 cp 5_C10* ./ALL3
-
 #cp 5_H3* ./ALL3
 cp 5_D7* ./ALL3
 
@@ -47,7 +46,7 @@ cd LOW3
 mkdir snpEff-gene
 mkdir snpEff-summary
 cd $WORK/lugdunensis
-java -Xmx4g -jar $WORK/lugdunensis-softwares/snpEff/snpEff.jar -v Staphylococcus_lugdunensis_n920143 $WORK/lugdunensis-output/LOW3/0000.vcf > $WORK/lugdunensis-output/snpEff/LOW3/snpEff-AllLOW3-0.ann.vcf;
+java -Xmx4g -jar $WORK/lugdunensis-softwares/snpEff/snpEff.jar -v Staphylococcus_lugdunensis_n920143 $WORK/lugdunensis-output/ALL3/0000.vcf > $WORK/lugdunensis-output/snpEff/LOW3/snpEff-AllLOW3-0.ann.vcf;
 mv $WORK/lugdunensis/snpEff_genes.txt $WORK/lugdunensis-output/snpEff/LOW3/snpEff-gene/all-LOW3-0-genes.txt;
 mv $WORK/lugdunensis/snpEff_summary.html $WORK/lugdunensis-output/snpEff/LOW3/snpEff-summary/all-LOW3-0-summary.html;
 
